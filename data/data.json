@@ -1,0 +1,66 @@
+{
+  "canecas": [
+    {
+      "titulo": "Flork Torcedor",
+      "codigo": "CAN001",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/flork-brasil/FLORK01.jpg",
+        "canecas/flork-brasil/FLORK02.jpg",
+        "canecas/flork-brasil/FLORK03.jpg",
+        "canecas/flork-brasil/FLORK04.jpg",
+        "canecas/flork-brasil/FLORK05.jpg",
+        "canecas/flork-brasil/FLORK06.jpg",
+        "canecas/flork-brasil/FLORK07.mp4"
+      ]
+    }
+  ],
+  "camisas": [
+    {
+      "titulo": "Camisa Vintage Rock",
+      "codigo": "CAM001",
+      "preco": "45,00",
+      "imagens": [
+        "https://placehold.co/400x400/696969/FFFFFF?text=Camisa+Rock+1",
+        "https://placehold.co/400x400/FFFFFF/000000?text=Camisa+Rock+2"
+      ]
+    }
+  ],
+  "ecobag": [
+    {
+      "titulo": "Ecobag de Gatos",
+      "codigo": "ECO001",
+      "preco": "20,00",
+      "imagens": [
+        "https://placehold.co/400x400/282725/FFFFFF?text=Ecobag+Gato+1",
+        "https://placehold.co/400x400/89a421/FFFFFF?text=Ecobag+Gato+2"
+      ]
+    }
+  ],
+  "mdf": [
+    {
+      "titulo": "Placa de Parede \"Lar, Doce Lar\"",
+      "codigo": "MDF001",
+      "preco": "30,00",
+      "imagens": ["https://placehold.co/400x400/5e3b1c/FFFFFF?text=Placa+MDF+1"]
+    }
+  ],
+  "quebra-cabecas": [
+    {
+      "titulo": "Quebra-cabeça de 500 peças - Paisagem",
+      "codigo": "QCB001",
+      "preco": "60,00",
+      "imagens": [
+        "https://placehold.co/400x400/9b472e/FFFFFF?text=Quebra-cabeca+1"
+      ]
+    }
+  ],
+  "outros": [
+    {
+      "titulo": "Chaveiro Personalizado",
+      "codigo": "OUT001",
+      "preco": "15,00",
+      "imagens": ["https://placehold.co/400x400/989898/FFFFFF?text=Chaveiro+1"]
+    }
+  ]
+}

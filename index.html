@@ -150,11 +150,21 @@
     </style>
   </head>
   <body class="p-4 md:p-8">
-    <header class="text-center mb-8">
-      <h1 class="dancing-script text-4xl md:text-6xl font-bold text-gray-800">
-        ARTESLIMAX Personalização
-      </h1>
-      <p class="text-xl md:text-2xl mt-4">Catálogo</p>
+    <header class="flex items-center justify-center mb-8 px-4">
+      <img
+        src="logo.png"
+        alt="Logo ARTESLIMAX"
+        class="w-28 h-28 sm:w-32 sm:h-32 object-contain mr-3"
+      />
+
+      <div class="text-center">
+        <h1
+          class="dancing-script text-3xl sm:text-4xl md:text-6xl font-bold text-gray-800 leading-tight"
+        >
+          ARTESLIMAX Personalização
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl mt-1">Catálogo</p>
+      </div>
     </header>
 
     <!-- Menu de navegação -->
@@ -214,114 +224,20 @@
     </div>
 
     <script>
-      // Objeto de dados simulando um JSON.
-      const catalogoData = {
-        canecas: [
-          {
-            titulo: "Caneca do Gato Astronauta",
-            codigo: "CAN001",
-            preco: "25,00",
-            imagens: [
-              "canecas/flork-brasil/FLORK001.jpg",
-              "canecas/flork-brasil/FLORK002.mp4",
-              "https://th.bing.com/th/id/OIP.__TecR7A179bNs3sFfb7KQHaG-?w=214&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
-              "https://placehold.co/400x400/98d249/FFFFFF?text=Caneca+Gato+2",
-              "https://placehold.co/400x400/1e3b0b/FFFFFF?text=Caneca+Gato+3",
-            ],
-          },
-          {
-            titulo: 'Caneca Personalizada "Minha Mãe"',
-            codigo: "CAN002",
-            preco: "28,00",
-            imagens: [
-              "https://placehold.co/400x400/693636/FFFFFF?text=Caneca+Mae+1",
-              "https://placehold.co/400x400/d89855/FFFFFF?text=Caneca+Mae+2",
-            ],
-          },
-          {
-            titulo: "Caneca para o Papai",
-            codigo: "CAN003",
-            preco: "28,00",
-            imagens: [
-              "https://placehold.co/400x400/553d1b/FFFFFF?text=Caneca+Pai+1",
-              "https://placehold.co/400x400/e9c185/FFFFFF?text=Caneca+Pai+2",
-            ],
-          },
-          {
-            titulo: "Caneca de Cerveja Gelada",
-            codigo: "CAN004",
-            preco: "35,00",
-            imagens: [
-              "https://placehold.co/400x400/5f7959/FFFFFF?text=Caneca+Cerveja+1",
-              "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
-              "https://placehold.co/400x400/c7d3c5/FFFFFF?text=Caneca+Cerveja+2",
-              "https://placehold.co/400x400/1e261d/FFFFFF?text=Caneca+Cerveja+3",
-            ],
-          },
-        ],
-        camisas: [
-          {
-            titulo: "Camisa Vintage Rock",
-            codigo: "CAM001",
-            preco: "45,00",
-            imagens: [
-              "https://placehold.co/400x400/696969/FFFFFF?text=Camisa+Rock+1",
-              "https://placehold.co/400x400/FFFFFF/000000?text=Camisa+Rock+2",
-            ],
-          },
-          {
-            titulo: "Camisa Floral Feminina",
-            codigo: "CAM002",
-            preco: "50,00",
-            imagens: [
-              "https://placehold.co/400x400/806655/FFFFFF?text=Camisa+Floral+1",
-              "https://placehold.co/400x400/d9d2cc/FFFFFF?text=Camisa+Floral+2",
-              "https://placehold.co/400x400/d3d3d3/000000?text=Camisa+Floral+3",
-            ],
-          },
-        ],
-        ecobag: [
-          {
-            titulo: "Ecobag de Gatos",
-            codigo: "ECO001",
-            preco: "20,00",
-            imagens: [
-              "https://placehold.co/400x400/282725/FFFFFF?text=Ecobag+Gato+1",
-              "https://placehold.co/400x400/89a421/FFFFFF?text=Ecobag+Gato+2",
-            ],
-          },
-        ],
-        mdf: [
-          {
-            titulo: 'Placa de Parede "Lar, Doce Lar"',
-            codigo: "MDF001",
-            preco: "30,00",
-            imagens: [
-              "https://placehold.co/400x400/5e3b1c/FFFFFF?text=Placa+MDF+1",
-            ],
-          },
-        ],
-        "quebra-cabecas": [
-          {
-            titulo: "Quebra-cabeça de 500 peças - Paisagem",
-            codigo: "QCB001",
-            preco: "60,00",
-            imagens: [
-              "https://placehold.co/400x400/9b472e/FFFFFF?text=Quebra-cabeca+1",
-            ],
-          },
-        ],
-        outros: [
-          {
-            titulo: "Chaveiro Personalizado",
-            codigo: "OUT001",
-            preco: "15,00",
-            imagens: [
-              "https://placehold.co/400x400/989898/FFFFFF?text=Chaveiro+1",
-            ],
-          },
-        ],
-      };
+      let catalogoData = {};
+
+      async function carregarCatalogo() {
+        try {
+          const response = await fetch("data/data.json");
+          console.log(response);
+          catalogoData = await response.json();
+          renderProducts("canecas"); // renderiza só depois que o JSON chegou
+        } catch (error) {
+          console.error("Erro ao carregar catálogo:", error);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", carregarCatalogo);
 
       const catalogContainer = document.getElementById("catalog-container");
       const menuButtons = document.querySelectorAll(".menu-btn");
@@ -455,7 +371,7 @@
         });
 
         // Inicia o carrossel automático para cada card e os listeners de arrastar
-        startCardCarousels();
+        startCardCarousels(category);
         products.forEach((item, index) => {
           if (item.imagens.length > 1) {
             handleSwipeAndDrag(`card-carousel-${index}`);
@@ -464,12 +380,12 @@
       }
 
       // Função para iniciar os carrosséis dos cards
-      function startCardCarousels() {
+      function startCardCarousels(category) {
         const carousels = document.querySelectorAll(
           ".product-card .carousel-container"
         );
         carousels.forEach((carousel, index) => {
-          const item = catalogoData["canecas"][index]; // Precisa ajustar para pegar a categoria correta
+          const item = catalogoData[category][index];
           if (item && item.imagens.length > 1) {
             const images = carousel.querySelectorAll(".carousel-item");
             let currentIndex = 0;
@@ -478,7 +394,7 @@
               images[currentIndex].classList.remove("active");
               currentIndex = (currentIndex + 1) % images.length;
               images[currentIndex].classList.add("active");
-            }, 5000); // 5 segundos
+            }, 5000);
 
             cardCarouselIntervals.push(interval);
           }
@@ -634,9 +550,9 @@
       });
 
       // Carrega a primeira categoria ao carregar a página
-      document.addEventListener("DOMContentLoaded", () => {
+      /*  document.addEventListener("DOMContentLoaded", () => {
         renderProducts("canecas");
-      });
+      }); */
     </script>
   </body>
 </html>
