@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARTESLIMAX Personalização</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f7f3f1;
+        color: #333;
+        margin: 0; /* remove espaçamentos padrão */
+        padding: 0;
+        min-height: 100vh; /* garante ocupar a tela toda */
+        display: flex; /* facilita centralizar ou expandir conteúdo */
+        flex-direction: column;
+      }
+      .dancing-script {
+        font-family: "Dancing Script", cursive;
+      }
+      .carousel-item {
+        display: none;
+        width: 100%;
+        height: 100%;
+      }
+      .carousel-item.active {
+        display: block;
+      }
+      .card-carousel-media {
+        object-fit: cover; /* Corta a mídia para preencher o contêiner */
+      }
+      .modal-carousel-media {
+        object-fit: contain; /* Adapta a mídia para caber no contêiner, mantendo a proporção */
+      }
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        padding-top: 100%; /* Proporção 1:1 */
+        overflow: hidden;
+        background-color: white;
+      }
+      .carousel-container .media-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .modal-carousel-container {
+        position: relative;
+        width: 100%;
+        max-width: 400px; /* tamanho máximo do modal */
+        aspect-ratio: 1 / 1; /* garante proporção quadrada */
+        overflow: hidden;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .modal-carousel-container .media-wrapper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .modal-carousel-container img,
+      .modal-carousel-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* centraliza e mantém proporção */
+        background-color: white; /* fundo branco nas bordas */
+      }
+
+      .modal-carousel-container {
+        position: relative;
+        width: 100%;
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        max-height: 60vh; /* Limite de altura para melhor aproveitamento da tela */
+        overflow: hidden;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 8px 12px;
+        border-radius: 9999px;
+        font-size: 2rem;
+        line-height: 1;
+        user-select: none;
+        cursor: pointer;
+        z-index: 5;
+      }
+      .carousel-btn.left {
+        left: 10px;
+      }
+      .carousel-btn.right {
+        right: 10px;
+      }
+      /* Estilo para o modal (diálogo) */
+      .modal {
+        display: none; /* Oculta por padrão */
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-content {
+        background-color: #fefefe;
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 95%; /* aproveita mais a largura */
+        max-height: 95%;
+        overflow-y: hidden; /* Evita a rolagem interna do modal */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .modal-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #555;
+        cursor: pointer;
+        z-index: 10; /* Garante que o botão fique na frente */
+      }
+    </style>
+  </head>
+  <body class="p-4 md:p-8">
+    <header class="text-center mb-8">
+      <h1 class="dancing-script text-4xl md:text-6xl font-bold text-gray-800">
+        ARTESLIMAX Personalização
+      </h1>
+      <p class="text-xl md:text-2xl mt-4">Catálogo</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav class="flex flex-wrap justify-center space-x-2 md:space-x-4 mb-8">
+      <button
+        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
+        data-category="canecas"
+      >
+        Canecas
+      </button>
+      <button
+        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
+        data-category="camisas"
+      >
+        Camisas
+      </button>
+      <button
+        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
+        data-category="ecobag"
+      >
+        Ecobag
+      </button>
+      <button
+        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
+        data-category="mdf"
+      >
+        MDF
+      </button>
+      <button
+        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
+        data-category="quebra-cabecas"
+      >
+        Quebra-cabeças
+      </button>
+      <button
+        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
+        data-category="outros"
+      >
+        Outros
+      </button>
+    </nav>
+
+    <!-- Área do catálogo -->
+    <main
+      id="catalog-container"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"
+    ></main>
+
+    <!-- Modal (Diálogo) para visualização do produto -->
+    <div id="product-modal" class="modal">
+      <div class="modal-content text-center">
+        <span class="modal-close-btn">&times;</span>
+        <div id="modal-content-container" class="flex flex-col h-full">
+          <!-- O conteúdo do produto será inserido aqui pelo JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Objeto de dados simulando um JSON.
+      const catalogoData = {
+        canecas: [
+          {
+            titulo: "Caneca do Gato Astronauta",
+            codigo: "CAN001",
+            preco: "25,00",
+            imagens: [
+              "canecas/flork-brasil/FLORK001.jpg",
+              "canecas/flork-brasil/FLORK002.mp4",
+              "https://th.bing.com/th/id/OIP.__TecR7A179bNs3sFfb7KQHaG-?w=214&h=202&c=7&r=0&o=7&pid=1.7&rm=3",
+              "https://placehold.co/400x400/98d249/FFFFFF?text=Caneca+Gato+2",
+              "https://placehold.co/400x400/1e3b0b/FFFFFF?text=Caneca+Gato+3",
+            ],
+          },
+          {
+            titulo: 'Caneca Personalizada "Minha Mãe"',
+            codigo: "CAN002",
+            preco: "28,00",
+            imagens: [
+              "https://placehold.co/400x400/693636/FFFFFF?text=Caneca+Mae+1",
+              "https://placehold.co/400x400/d89855/FFFFFF?text=Caneca+Mae+2",
+            ],
+          },
+          {
+            titulo: "Caneca para o Papai",
+            codigo: "CAN003",
+            preco: "28,00",
+            imagens: [
+              "https://placehold.co/400x400/553d1b/FFFFFF?text=Caneca+Pai+1",
+              "https://placehold.co/400x400/e9c185/FFFFFF?text=Caneca+Pai+2",
+            ],
+          },
+          {
+            titulo: "Caneca de Cerveja Gelada",
+            codigo: "CAN004",
+            preco: "35,00",
+            imagens: [
+              "https://placehold.co/400x400/5f7959/FFFFFF?text=Caneca+Cerveja+1",
+              "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+              "https://placehold.co/400x400/c7d3c5/FFFFFF?text=Caneca+Cerveja+2",
+              "https://placehold.co/400x400/1e261d/FFFFFF?text=Caneca+Cerveja+3",
+            ],
+          },
+        ],
+        camisas: [
+          {
+            titulo: "Camisa Vintage Rock",
+            codigo: "CAM001",
+            preco: "45,00",
+            imagens: [
+              "https://placehold.co/400x400/696969/FFFFFF?text=Camisa+Rock+1",
+              "https://placehold.co/400x400/FFFFFF/000000?text=Camisa+Rock+2",
+            ],
+          },
+          {
+            titulo: "Camisa Floral Feminina",
+            codigo: "CAM002",
+            preco: "50,00",
+            imagens: [
+              "https://placehold.co/400x400/806655/FFFFFF?text=Camisa+Floral+1",
+              "https://placehold.co/400x400/d9d2cc/FFFFFF?text=Camisa+Floral+2",
+              "https://placehold.co/400x400/d3d3d3/000000?text=Camisa+Floral+3",
+            ],
+          },
+        ],
+        ecobag: [
+          {
+            titulo: "Ecobag de Gatos",
+            codigo: "ECO001",
+            preco: "20,00",
+            imagens: [
+              "https://placehold.co/400x400/282725/FFFFFF?text=Ecobag+Gato+1",
+              "https://placehold.co/400x400/89a421/FFFFFF?text=Ecobag+Gato+2",
+            ],
+          },
+        ],
+        mdf: [
+          {
+            titulo: 'Placa de Parede "Lar, Doce Lar"',
+            codigo: "MDF001",
+            preco: "30,00",
+            imagens: [
+              "https://placehold.co/400x400/5e3b1c/FFFFFF?text=Placa+MDF+1",
+            ],
+          },
+        ],
+        "quebra-cabecas": [
+          {
+            titulo: "Quebra-cabeça de 500 peças - Paisagem",
+            codigo: "QCB001",
+            preco: "60,00",
+            imagens: [
+              "https://placehold.co/400x400/9b472e/FFFFFF?text=Quebra-cabeca+1",
+            ],
+          },
+        ],
+        outros: [
+          {
+            titulo: "Chaveiro Personalizado",
+            codigo: "OUT001",
+            preco: "15,00",
+            imagens: [
+              "https://placehold.co/400x400/989898/FFFFFF?text=Chaveiro+1",
+            ],
+          },
+        ],
+      };
+
+      const catalogContainer = document.getElementById("catalog-container");
+      const menuButtons = document.querySelectorAll(".menu-btn");
+      const modal = document.getElementById("product-modal");
+      const modalContentContainer = document.getElementById(
+        "modal-content-container"
+      );
+      const modalCloseBtn = document.querySelector(".modal-close-btn");
+      const whatsappNumber = "5575999593288";
+      let currentModalCarouselInterval = null;
+      let cardCarouselIntervals = [];
+
+      // Função auxiliar para verificar se a URL é um vídeo
+      function isVideoUrl(url) {
+        return url.match(/\.(mp4|webm|ogg|mov)$/i);
+      }
+
+      // Função para gerar o HTML do carrossel para o card principal
+      function createCardCarouselHTML(item, index) {
+        const carouselId = `card-carousel-${index}`;
+        let mediaHtml = item.imagens
+          .map((src, imgIndex) => {
+            if (isVideoUrl(src)) {
+              return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                imgIndex === 0 ? "active" : ""
+              }></video>`;
+            } else {
+              return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
+                item.titulo
+              }" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md ${
+                imgIndex === 0 ? "active" : ""
+              }">`;
+            }
+          })
+          .join("");
+
+        let buttonsHtml = "";
+        if (item.imagens.length > 1) {
+          buttonsHtml = `
+                    <button class="carousel-btn left text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', -1);">&#10094;</button>
+                    <button class="carousel-btn right text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', 1);">&#10095;</button>
+                `;
+        }
+
+        return `
+                <div id="${carouselId}" class="carousel-container relative overflow-hidden rounded-lg">
+                    <div class="media-wrapper">
+                        ${mediaHtml}
+                    </div>
+                    ${buttonsHtml}
+                </div>
+            `;
+      }
+
+      // Função para gerar o HTML do carrossel para o modal
+      function createModalCarouselHTML(item) {
+        const carouselId = `modal-carousel`;
+        let mediaHtml = item.imagens
+          .map((src, imgIndex) => {
+            if (isVideoUrl(src)) {
+              return `<video src="${src}" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                imgIndex === 0 ? "active" : ""
+              }></video>`;
+            } else {
+              return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
+                item.titulo
+              }" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md ${
+                imgIndex === 0 ? "active" : ""
+              }">`;
+            }
+          })
+          .join("");
+
+        let buttonsHtml = "";
+        if (item.imagens.length > 1) {
+          buttonsHtml = `
+                    <button class="carousel-btn left" onclick="changeImage('${carouselId}', -1)">&#10094;</button>
+                    <button class="carousel-btn right" onclick="changeImage('${carouselId}', 1)">&#10095;</button>
+                `;
+        }
+
+        return `
+                <div id="${carouselId}" class="modal-carousel-container relative overflow-hidden mb-4">
+                    <div class="media-wrapper">
+                        ${mediaHtml}
+                    </div>
+                    ${buttonsHtml}
+                </div>
+                <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
+                <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
+                <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
+                <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+            `;
+      }
+
+      // Função para renderizar os produtos na tela principal
+      function renderProducts(category) {
+        catalogContainer.innerHTML = "";
+
+        const products = catalogoData[category];
+        if (!products) {
+          catalogContainer.innerHTML =
+            '<p class="text-center text-lg col-span-full">Nenhum item encontrado nesta categoria.</p>';
+          return;
+        }
+
+        // Limpa os carrosseis anteriores
+        cardCarouselIntervals.forEach((interval) => clearInterval(interval));
+        cardCarouselIntervals = [];
+
+        products.forEach((item, index) => {
+          const cardHtml = `
+                    <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform hover:scale-105">
+                        <div onclick="openModal(${index}, '${category}')" class="cursor-pointer">
+                            ${createCardCarouselHTML(item, index)}
+                            <h2 class="text-md font-semibold mt-2 text-center truncate">${
+                              item.titulo
+                            }</h2>
+                            <p class="text-lg font-bold text-green-600 text-center">R$ ${
+                              item.preco
+                            }</p>
+                        </div>
+                        <button onclick="encomendar('${item.titulo}', '${
+            item.preco
+          }', '${
+            item.codigo
+          }')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-1 px-2 rounded-full mt-2 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+                    </div>
+                `;
+          catalogContainer.innerHTML += cardHtml;
+        });
+
+        // Inicia o carrossel automático para cada card e os listeners de arrastar
+        startCardCarousels();
+        products.forEach((item, index) => {
+          if (item.imagens.length > 1) {
+            handleSwipeAndDrag(`card-carousel-${index}`);
+          }
+        });
+      }
+
+      // Função para iniciar os carrosséis dos cards
+      function startCardCarousels() {
+        const carousels = document.querySelectorAll(
+          ".product-card .carousel-container"
+        );
+        carousels.forEach((carousel, index) => {
+          const item = catalogoData["canecas"][index]; // Precisa ajustar para pegar a categoria correta
+          if (item && item.imagens.length > 1) {
+            const images = carousel.querySelectorAll(".carousel-item");
+            let currentIndex = 0;
+
+            const interval = setInterval(() => {
+              images[currentIndex].classList.remove("active");
+              currentIndex = (currentIndex + 1) % images.length;
+              images[currentIndex].classList.add("active");
+            }, 5000); // 5 segundos
+
+            cardCarouselIntervals.push(interval);
+          }
+        });
+      }
+
+      // Função para abrir o modal com o item selecionado
+      window.openModal = function (itemIndex, category) {
+        const item = catalogoData[category][itemIndex];
+        modalContentContainer.innerHTML = createModalCarouselHTML(item);
+        modal.style.display = "flex"; // Exibe o modal
+
+        // Inicia o carrossel do modal
+        const carousel = document.getElementById("modal-carousel");
+        if (carousel && item.imagens.length > 1) {
+          const images = carousel.querySelectorAll(".carousel-item");
+          let currentIndex = 0;
+          images[0].classList.add("active"); // Garante que a primeira imagem está ativa
+
+          if (currentModalCarouselInterval) {
+            clearInterval(currentModalCarouselInterval);
+          }
+
+          currentModalCarouselInterval = setInterval(() => {
+            images[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add("active");
+          }, 5000); // 5 segundos
+
+          handleSwipeAndDrag(carousel.id);
+        }
+      };
+
+      // Função para fechar o modal
+      window.closeModal = function () {
+        modal.style.display = "none";
+        if (currentModalCarouselInterval) {
+          clearInterval(currentModalCarouselInterval);
+          currentModalCarouselInterval = null;
+        }
+      };
+
+      // Função para trocar a imagem do carrossel no modal manualmente
+      window.changeImage = function (carouselId, direction) {
+        const container = document.getElementById(carouselId);
+        const images = container.querySelectorAll(".carousel-item");
+        const currentActive = container.querySelector(".carousel-item.active");
+
+        // Pausa o carrossel automático
+        if (carouselId.includes("card-carousel")) {
+          // Não é necessário parar o carrossel individual do card
+        } else if (currentModalCarouselInterval) {
+          clearInterval(currentModalCarouselInterval);
+        }
+
+        let currentIndex = Array.from(images).indexOf(currentActive);
+        currentActive.classList.remove("active");
+
+        let newIndex =
+          (currentIndex + direction + images.length) % images.length;
+        images[newIndex].classList.add("active");
+
+        // Reinicia o carrossel automático após a mudança manual
+        if (carouselId.includes("modal-carousel") && images.length > 1) {
+          currentModalCarouselInterval = setInterval(() => {
+            window.changeImage(carouselId, 1);
+          }, 5000);
+        }
+      };
+
+      // Função para o botão "Encomendar"
+      window.encomendar = function (titulo, preco, codigo) {
+        const message = `Olá! Gostaria de encomendar o item: ${titulo} (Código: ${codigo}, R$ ${preco}). Por favor, me passe mais detalhes sobre a personalização.`;
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+          message
+        )}`;
+        window.open(whatsappLink, "_blank");
+      };
+
+      // Função para adicionar funcionalidade de arrastar e passar
+      function handleSwipeAndDrag(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        let isDragging = false;
+        let startX = 0;
+        let endX = 0;
+
+        const startDrag = (e) => {
+          isDragging = true;
+          if (e.type === "touchstart") {
+            startX = e.touches[0].clientX;
+          } else {
+            startX = e.clientX;
+          }
+          carousel.style.cursor = "grabbing";
+        };
+
+        const endDrag = (e) => {
+          if (!isDragging) return;
+          isDragging = false;
+
+          if (e.type === "touchend") {
+            endX = e.changedTouches[0].clientX;
+          } else {
+            endX = e.clientX;
+          }
+
+          const diffX = startX - endX;
+          const threshold = 50;
+
+          if (Math.abs(diffX) > threshold) {
+            if (diffX > 0) {
+              // Swipe left
+              changeImage(carouselId, 1);
+            } else {
+              // Swipe right
+              changeImage(carouselId, -1);
+            }
+          }
+          carousel.style.cursor = "grab";
+        };
+
+        const drag = (e) => {
+          if (!isDragging) return;
+          e.preventDefault();
+        };
+
+        carousel.addEventListener("mousedown", startDrag);
+        carousel.addEventListener("mouseup", endDrag);
+        carousel.addEventListener("mouseleave", endDrag); // Para evitar que a imagem trave se o mouse sair do elemento
+        carousel.addEventListener("mousemove", drag);
+
+        carousel.addEventListener("touchstart", startDrag, { passive: true });
+        carousel.addEventListener("touchend", endDrag, { passive: true });
+        carousel.addEventListener("touchmove", drag, { passive: false });
+      }
+
+      // Adiciona event listeners para os botões do menu
+      menuButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const category = button.getAttribute("data-category");
+          renderProducts(category);
+        });
+      });
+
+      // Adiciona event listener para o botão de fechar o modal
+      modalCloseBtn.addEventListener("click", closeModal);
+
+      // Fecha o modal ao clicar fora dele
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Carrega a primeira categoria ao carregar a página
+      document.addEventListener("DOMContentLoaded", () => {
+        renderProducts("canecas");
+      });
+    </script>
+  </body>
+</html>
