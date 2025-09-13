@@ -17,12 +17,21 @@
   ],
   "camisas": [
     {
-      "titulo": "Camisa Vintage Rock",
+      "titulo": "Camisa Frosted",
       "codigo": "CAM001",
-      "preco": "45,00",
+      "preco": "30,00",
       "imagens": [
-        "https://placehold.co/400x400/696969/FFFFFF?text=Camisa+Rock+1",
-        "https://placehold.co/400x400/FFFFFF/000000?text=Camisa+Rock+2"
+        "camisas/frosted/FROSTED1.png",
+        "camisas/frosted/FROSTED3.png"
+      ]
+    },
+    {
+      "titulo": "Moletom Frosted",
+      "codigo": "MOL002",
+      "preco": "50,00",
+      "imagens": [
+        "camisas/frosted/FROSTED1.png",
+        "camisas/frosted/FROSTED2.png",
       ]
     }
   ],
