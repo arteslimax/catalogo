@@ -147,6 +147,10 @@
         cursor: pointer;
         z-index: 10; /* Garante que o botão fique na frente */
       }
+      .menu-btn.active {
+        background-color: #3b82f6; /* azul */
+        color: #fff;
+      }
     </style>
   </head>
   <body class="p-4 md:p-8">
@@ -232,6 +236,10 @@
           console.log(response);
           catalogoData = await response.json();
           renderProducts("canecas"); // renderiza só depois que o JSON chegou
+          const firstBtn = document.querySelector(
+            '.menu-btn[data-category="canecas"]'
+          );
+          if (firstBtn) firstBtn.classList.add("active");
         } catch (error) {
           console.error("Erro ao carregar catálogo:", error);
         }
@@ -536,6 +544,11 @@
         button.addEventListener("click", () => {
           const category = button.getAttribute("data-category");
           renderProducts(category);
+
+          // Remove a classe active de todos os botões
+          menuButtons.forEach((btn) => btn.classList.remove("active"));
+          // Adiciona a classe active no botão clicado
+          button.classList.add("active");
         });
       });
 
