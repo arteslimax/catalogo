@@ -238,6 +238,18 @@
         scrollbar-width: none;
         -ms-overflow-style: none;
       }
+
+      /* Efeito hover apenas para desktop */
+      .product-card {
+        transition: transform 0.3s ease;
+      }
+
+      /* Aplica o efeito apenas em telas maiores que 768px (desktop) */
+      @media (min-width: 768px) {
+        .product-card:hover {
+          transform: scale(1.03);
+        }
+      }
     </style>
   </head>
   <body class="p-4 md:p-8">
@@ -549,7 +561,8 @@
         // Gera o HTML de cada produto
         products.forEach((item, index) => {
           const cardHtml = `
-        <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform hover:scale-105">
+        <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform">
+
           <div onclick="openModal(${index}, '${category}', '${subcategory}')" class="cursor-pointer">
             ${createCardCarouselHTML(item, index)}
             <h2 class="text-md font-semibold mt-2 text-center truncate">${
