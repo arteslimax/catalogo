@@ -583,17 +583,76 @@
         const carousels = document.querySelectorAll(
           ".product-card .carousel-container"
         );
+
         carousels.forEach((carousel, index) => {
           const item = products[index];
           if (item && Array.isArray(item.imagens) && item.imagens.length > 1) {
             const images = carousel.querySelectorAll(".carousel-item");
             let currentIndex = 0;
-            const interval = setInterval(() => {
+            let timeoutId = null;
+
+            // Remove todos os event listeners ended antes de adicionar novos
+            function removeEndedListeners() {
+              images.forEach((media) => {
+                if (media.tagName.toLowerCase() === "video") {
+                  media.pause();
+                  media.currentTime = 0;
+                  media.onended = null;
+                }
+              });
+            }
+
+            function nextSlide() {
+              // Limpa timeout pendente para evitar múltiplas execuções
+              if (timeoutId) {
+                clearTimeout(timeoutId);
+                timeoutId = null;
+              }
+
+              // Remove listeners do slide atual
+              removeEndedListeners();
               images[currentIndex].classList.remove("active");
+
               currentIndex = (currentIndex + 1) % images.length;
               images[currentIndex].classList.add("active");
-            }, 5000);
-            cardCarouselIntervals.push(interval);
+
+              const currentMedia = images[currentIndex];
+              if (currentMedia.tagName.toLowerCase() === "video") {
+                // Play vídeo e espera finalizar para avançar
+                currentMedia.play();
+                currentMedia.onended = () => {
+                  nextSlide();
+                };
+              } else {
+                // Imagem avança após 3 A 5 segundos
+                const minTime = 3000;
+                const maxTime = 5000;
+                timeoutId = setTimeout(
+                  nextSlide,
+                  minTime + Math.random() * (maxTime - minTime)
+                );
+              }
+            }
+
+            // Inicializa carrossel no primeiro slide
+            removeEndedListeners();
+            images.forEach((img) => img.classList.remove("active"));
+            images[0].classList.add("active");
+
+            const firstMedia = images[0];
+            if (firstMedia.tagName.toLowerCase() === "video") {
+              firstMedia.play();
+              firstMedia.onended = () => {
+                nextSlide();
+              };
+            } else {
+              const minTime = 3000;
+              const maxTime = 5000;
+              timeoutId = setTimeout(
+                nextSlide,
+                minTime + Math.random() * (maxTime - minTime)
+              );
+            }
           }
         });
       }
