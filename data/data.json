@@ -631,27 +631,5 @@
         "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"]
       }
     ]
-  },
-  "camisas": {
-    "simples": [
-      {
-        "titulo": "Camisa Frosted",
-        "codigo": "CAM001",
-        "preco": "30,00",
-        "imagens": [
-          "camisas/frosted/FROSTED1.png",
-          "camisas/frosted/FROSTED3.png"
-        ]
-      },
-      {
-        "titulo": "Moletom Frosted",
-        "codigo": "MOL002",
-        "preco": "50,00",
-        "imagens": [
-          "camisas/frosted/FROSTED1.png",
-          "camisas/frosted/FROSTED2.png"
-        ]
-      }
-    ]
   }
 }
