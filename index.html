@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="favicon-256.ico" />
-
     <style>
       body {
         font-family: sans-serif;
@@ -143,106 +142,82 @@
         z-index: 10;
       }
       .menu-btn {
-        background-color: #4b4b4b; /* cinza escuro */
-        color: #ddd; /* texto cinza claro */
+        background-color: #4b4b4b;
+        color: #ddd;
         transition: background-color 0.3s, color 0.3s;
       }
-
       .menu-btn:hover {
-        background-color: #6b6b6b; /* um pouco mais claro ao passar o mouse */
-        color: #fff; /* texto branco ao passar */
+        background-color: #6b6b6b;
+        color: #fff;
       }
-
       .subcategory-btn {
         background-color: #4b4b4b;
         color: #ddd;
         transition: background-color 0.3s, color 0.3s;
       }
-
       .subcategory-btn:hover {
         background-color: #6b6b6b;
         color: #fff;
       }
-
-      /* O seu estilo ativo já está ok, só mantenha */
       .menu-btn.active {
         background-color: #1a0272;
         color: #fff;
       }
-
       .subcategory-btn.active {
         background-color: #4810e2;
         color: #fff;
       }
-
       #menu-container {
         overflow-x: hidden;
         width: 100%;
-      }
-
-      #menu-container {
         position: sticky;
         top: 0;
         background-color: #f7f3f1;
         z-index: 1001;
       }
-
       #submenu-container {
+        overflow-x: hidden;
+        width: 100%;
         position: sticky;
-        top: 2.9rem; /* altura do menu-container - ajuste conforme seu layout */
+        top: 3rem; /* Ajustar conforme altura do menu */
         background-color: #f7f3f1;
         z-index: 1000;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
       }
-
       #main-menu {
         display: flex;
         gap: 0.2rem;
         overflow-x: auto;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        justify-content: center; /* por padrão centralizado */
+        justify-content: center;
         align-items: center;
         scrollbar-width: none;
         -ms-overflow-style: none;
+        margin-top: 10px;
       }
-
-      /* No mobile, (menos de 768px por exemplo), alinha à esquerda para permitir scroll */
       @media (max-width: 1280px) {
         #main-menu {
-          justify-content: flex-start; /* itens iniciam na esquerda */
+          justify-content: flex-start;
         }
       }
-
-      /* Esconde barras de rolagem */
       #main-menu::-webkit-scrollbar {
         display: none;
       }
-
-      #submenu-container {
-        overflow-x: hidden;
-        width: 100%;
-      }
-
       #subcategory-container {
         display: flex;
         gap: 0.2rem;
         overflow-x: auto;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-
-        justify-content: center; /* padrão centralizado no desktop */
+        justify-content: center;
         align-items: center;
       }
-
-      /* Em telas pequenas, alinhamento à esquerda para facilitar scroll */
       @media (max-width: 1280px) {
         #subcategory-container {
           justify-content: flex-start;
         }
       }
-
-      /* Esconde scrollbars para aparência limpa */
       #subcategory-container::-webkit-scrollbar {
         display: none;
       }
@@ -250,17 +225,41 @@
         scrollbar-width: none;
         -ms-overflow-style: none;
       }
-
-      /* Efeito hover apenas para desktop */
       .product-card {
         transition: transform 0.3s ease;
       }
-
-      /* Aplica o efeito apenas em telas maiores que 768px (desktop) */
       @media (min-width: 768px) {
         .product-card:hover {
           transform: scale(1.03);
         }
+      }
+      /* Controles de Paginação Fixos */
+      #pagination-controls {
+        position: sticky;
+        top: 5.2rem; /* altura do menu + submenu */
+        z-index: 1002;
+        background-color: #f7f3f1;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.2rem 0;
+        border-bottom: 1px solid #ccc;
+      }
+      #pagination-controls button {
+        background-color: #6b6b6b;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      #pagination-controls button:disabled {
+        background-color: #bbb;
+        cursor: not-allowed;
+      }
+      #pagination-controls button:hover:not(:disabled) {
+        background-color: #4810e2;
       }
     </style>
   </head>
@@ -282,9 +281,7 @@
     </header>
 
     <!-- Menu de navegação -->
-    <!-- Div pai com overflow oculto para esconder o scroll -->
     <div id="menu-container" style="overflow-x: hidden; width: 100%">
-      <!-- Div filha que armazena os botões e que pode rolar -->
       <nav id="main-menu">
         <!-- Botões do menu serão inseridos aqui -->
       </nav>
@@ -298,9 +295,13 @@
       ></nav>
     </div>
 
+    <!-- Controles de paginação fixos -->
+    <div id="pagination-controls"></div>
+
     <!-- Área do catálogo -->
     <main
       id="catalog-container"
+      style="padding-top: 10px"
       class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 md:gap-3"
     ></main>
 
@@ -313,41 +314,40 @@
     </div>
 
     <script>
-      // Variáveis globais e referências a elementos DOM
-      let catalogoData = {}; // Dados do catálogo carregados do JSON
-      const catalogContainer = document.getElementById("catalog-container"); // Área onde os produtos serão exibidos
+      let catalogoData = {};
+      const catalogContainer = document.getElementById("catalog-container");
       const subcategoryContainer = document.getElementById(
         "subcategory-container"
-      ); // Container para submenu de subcategorias
-      const modal = document.getElementById("product-modal"); // Modal para mostrar detalhes do produto
+      );
+      const modal = document.getElementById("product-modal");
       const modalContentContainer = document.getElementById(
         "modal-content-container"
-      ); // Conteúdo do modal
-      const modalCloseBtn = document.querySelector(".modal-close-btn"); // Botão para fechar modal
-      const whatsappNumber = "5575999593288"; // Número para enviar pedidos via WhatsApp
-      let currentModalCarouselInterval = null; // Intervalo para carrossel no modal
-      let cardCarouselIntervals = []; // Array para armazenar intervalos dos carrosseis nos cards
+      );
+      const modalCloseBtn = document.querySelector(".modal-close-btn");
+      const whatsappNumber = "5575999593288";
+      let currentModalCarouselInterval = null;
+      let cardCarouselIntervals = [];
 
-      // Função que identifica se a URL da imagem é vídeo (extensões comuns)
+      let currentPage = 1;
+      const rowsPerPage = 40;
+      let currentCategory = null;
+      let currentSubcategory = null;
+
       function isVideoUrl(url) {
         return url.match(/\.(mp4|webm|ogg|mov)$/i);
       }
 
-      // Gera o HTML do carrossel dentro do card do produto, com imagens/vídeos
       function createCardCarouselHTML(item, index) {
-        const carouselId = `card-carousel-${index}`; // Id único para cada carrossel
-        // Mapeia as imagens ou videos para tags HTML apropriadas
+        const carouselId = `card-carousel-${index}`;
         let mediaHtml = Array.isArray(item.imagens)
           ? item.imagens
               .map((src, imgIndex) => {
                 if (isVideoUrl(src)) {
-                  // Video com autoplay, loop e muted
-                  return `<video srcset="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                  return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
                     imgIndex === 0 ? "active" : ""
                   }></video>`;
                 } else {
-                  // Imagem simples
-                  return `<img srcset="${src}" alt="Imagem ${imgIndex + 1} de ${
+                  return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
                     item.titulo
                   }" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md ${
                     imgIndex === 0 ? "active" : ""
@@ -356,8 +356,6 @@
               })
               .join("")
           : "";
-
-        // Botões de navegação do carrossel (se houver mais de 1 imagem)
         let buttonsHtml = "";
         if (Array.isArray(item.imagens) && item.imagens.length > 1) {
           buttonsHtml = `
@@ -365,19 +363,16 @@
           <button class="carousel-btn right text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', 1);">&#10095;</button>
         `;
         }
-
-        // Retorna o HTML completo do carrossel para o card
         return `
-      <div id="${carouselId}" class="carousel-container relative overflow-hidden rounded-lg">
-        <div class="media-wrapper">
-          ${mediaHtml}
+        <div id="${carouselId}" class="carousel-container relative overflow-hidden rounded-lg">
+          <div class="media-wrapper">
+            ${mediaHtml}
+          </div>
+          ${buttonsHtml}
         </div>
-        ${buttonsHtml}
-      </div>
-    `;
+      `;
       }
 
-      // Gera o HTML do carrossel para o modal (detalhes do produto)
       function createModalCarouselHTML(item) {
         const carouselId = `modal-carousel`;
         let mediaHtml = Array.isArray(item.imagens)
@@ -397,7 +392,6 @@
               })
               .join("")
           : "";
-
         let buttonsHtml = "";
         if (Array.isArray(item.imagens) && item.imagens.length > 1) {
           buttonsHtml = `
@@ -405,33 +399,24 @@
           <button class="carousel-btn right" onclick="changeImage('${carouselId}', 1)">&#10095;</button>
         `;
         }
-
-        // Retorna conteúdo completo do modal, carrossel e informações do produto
         return `
-      <div id="${carouselId}" class="modal-carousel-container relative overflow-hidden mb-4">
-        <div class="media-wrapper">
-          ${mediaHtml}
+        <div id="${carouselId}" class="modal-carousel-container relative overflow-hidden mb-4">
+          <div class="media-wrapper">
+            ${mediaHtml}
+          </div>
+          ${buttonsHtml}
         </div>
-        ${buttonsHtml}
-      </div>
-      <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
-      <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
-      <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
-      <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
-    `;
+        <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
+        <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
+        <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
+        <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+      `;
       }
 
       function autoScrollMenuBounce() {
         const mainMenu = document.getElementById("main-menu");
         if (!mainMenu) return;
-
-        // Verifica se é dispositivo móvel (exemplo básico)
-        /* const isMobile = window.matchMedia("(max-width: 768px)").matches;
-        if (!isMobile) return; */
-
-        // Se o scroll horizontal for possível
-        if (mainMenu.scrollWidth > mainMenu.clientWidth) {
-          // Scrolla suavemente para a direita em 100px e volta após 1 segundo
+        if (mainMenu.scrollWidth > mainMenu.clientWidth + 1) {
           setTimeout(() => {
             mainMenu.scrollBy({ left: 100, behavior: "smooth" });
           }, 500);
@@ -441,16 +426,13 @@
         }
       }
 
-      // Chama a função após renderizar o menu
       function afterMenuRendered() {
         autoScrollMenuBounce();
       }
 
-      // Modifique renderMainMenu para chamar afterMenuRendered após criação dos botões
       function renderMainMenu() {
         const mainMenu = document.getElementById("main-menu");
         mainMenu.innerHTML = "";
-
         Object.keys(catalogoData).forEach((category) => {
           const display = category.charAt(0).toUpperCase() + category.slice(1);
           const btn = document.createElement("button");
@@ -458,98 +440,83 @@
             "menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 shadow-md transition-all hover:bg-gray-800";
           btn.textContent = display;
           btn.setAttribute("data-category", category);
-
           btn.onclick = () => {
+            currentPage = 1;
+            currentCategory = category;
+            currentSubcategory = "todos";
             renderSubcategories(category);
-            renderProducts(category, "todos");
-
+            renderProducts(category, "todos", currentPage);
+            updatePaginationControls(category, "todos");
             document
               .querySelectorAll(".menu-btn")
               .forEach((b) => b.classList.remove("active"));
             btn.classList.add("active");
+            window.scrollTo({
+              top: document.getElementById("menu-container").offsetTop,
+              behavior: "smooth",
+            });
           };
-
           mainMenu.appendChild(btn);
         });
-
-        afterMenuRendered(); // Chama aqui o efeito de scroll
+        afterMenuRendered();
       }
 
       function autoScrollSubmenuBounce() {
         const submenu = document.getElementById("subcategory-container");
         if (!submenu) return;
-
-        /* const isMobile = window.matchMedia("(max-width: 768px)").matches;
-        if (!isMobile) return; */
-
-        if (submenu.scrollWidth > submenu.clientWidth) {
-          // Scroll para a direita
+        if (submenu.scrollWidth > submenu.clientWidth + 1) {
           setTimeout(() => {
             submenu.scrollBy({ left: 100, behavior: "smooth" });
           }, 500);
-
-          // Voltar após 1.3 segundos (tempo para o scroll completar)
           setTimeout(() => {
             submenu.scrollTo({ left: 0, behavior: "smooth" });
           }, 1800);
         }
       }
 
-      // Gera o submenu das subcategorias para a categoria selecionada
       function renderSubcategories(category) {
-        subcategoryContainer.innerHTML = ""; // Limpa submenu antigo
-
+        subcategoryContainer.innerHTML = "";
         if (!catalogoData[category]) return;
-
-        const subcategories = Object.keys(catalogoData[category]); // Subcategorias presentes
-
-        // Botão "Todos" para exibir todos os produtos
+        const subcategories = Object.keys(catalogoData[category]);
         subcategoryContainer.innerHTML += `
-    <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 rounded-full active" data-subcategory="todos">Todos</button>
-  `;
-
-        // Botões para cada subcategoria
+        <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 rounded-full active" data-subcategory="todos">Todos</button>
+      `;
         subcategories.forEach((subcat) => {
           const display = subcat.charAt(0).toUpperCase() + subcat.slice(1);
           subcategoryContainer.innerHTML += `
-      <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 my-1 rounded-full" data-subcategory="${subcat}">${display}</button>
-    `;
+          <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 my-1 rounded-full" data-subcategory="${subcat}">${display}</button>
+        `;
         });
-
-        // Selecione os botões apenas dentro do container atual para evitar conflitos
         const buttons =
           subcategoryContainer.querySelectorAll(".subcategory-btn");
         buttons.forEach((btn) => {
           btn.addEventListener("click", () => {
-            const subcat = btn.getAttribute("data-subcategory");
-            renderProducts(category, subcat);
-
-            // Remove 'active' somente dos botões dentro deste submenu e adiciona no clicado
+            currentPage = 1;
+            currentSubcategory = btn.getAttribute("data-subcategory");
+            renderProducts(currentCategory, currentSubcategory, currentPage);
+            updatePaginationControls(currentCategory, currentSubcategory);
             buttons.forEach((b) => b.classList.remove("active"));
             btn.classList.add("active");
+            window.scrollTo({
+              top: document.getElementById("menu-container").offsetTop,
+              behavior: "smooth",
+            });
           });
         });
-
         autoScrollSubmenuBounce();
       }
 
-      // Retorna lista dos produtos para categoria e subcategoria selecionadas
       function getProducts(category, subcategory = "todos") {
         if (!catalogoData[category]) return [];
-
         if (subcategory === "todos") {
-          // Junta todos os produtos das subcategorias para "todos"
           return Object.values(catalogoData[category]).flat();
         }
-
-        // Retorna produtos específicos da subcategoria
         return catalogoData[category][subcategory] || [];
       }
 
-      // Renderiza os produtos na tela
-      function renderProducts(category, subcategory = "todos") {
+      function renderProducts(category, subcategory = "todos", page = 1) {
         const products = getProducts(category, subcategory);
-        catalogContainer.innerHTML = ""; // Limpa produtos antigos
+        catalogContainer.innerHTML = "";
 
         if (products.length === 0) {
           catalogContainer.innerHTML =
@@ -557,123 +524,85 @@
           return;
         }
 
-        // Limpa intervalos dos carrosséis para evitar conflitos
-        cardCarouselIntervals.forEach((interval) => clearInterval(interval));
-        cardCarouselIntervals = [];
+        const start = (page - 1) * rowsPerPage;
+        const end = start + rowsPerPage;
+        const pagedProducts = products.slice(start, end);
 
-        // Gera o HTML de cada produto
-        products.forEach((item, index) => {
+        pagedProducts.forEach((item, index) => {
           const cardHtml = `
-        <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform">
-
-          <div onclick="openModal(${index}, '${category}', '${subcategory}')" class="cursor-pointer">
-            ${createCardCarouselHTML(item, index)}
-            <h2 class="text-md font-semibold mt-2 text-center truncate">${
-              item.titulo
-            }</h2>
-            <p class="text-lg font-bold text-green-600 text-center">R$ ${
-              item.preco
-            }</p>
-          </div>
-          <button onclick="encomendar('${item.titulo}', '${item.preco}', '${
+          <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform">
+            <div onclick="openModal(${
+              index + start
+            }, '${category}', '${subcategory}')" class="cursor-pointer">
+              ${createCardCarouselHTML(item, index + start)}
+              <h2 class="text-md font-semibold mt-2 text-center truncate">${
+                item.titulo
+              }</h2>
+              <p class="text-lg font-bold text-green-600 text-center">R$ ${
+                item.preco
+              }</p>
+            </div>
+            <button onclick="encomendar('${item.titulo}', '${item.preco}', '${
             item.codigo
           }')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-1 px-2 rounded-full mt-2 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
-        </div>
-      `;
+          </div>
+        `;
           catalogContainer.innerHTML += cardHtml;
         });
 
-        // Inicializa o carrossel de imagens para os cards
-        // startCardCarousels(products);
-
-        // Adiciona suporte ao swipe/arrastar para os carrosséis
-        products.forEach((item, index) => {
+        // Limpa e inicializa swipe/carrossel se necessário
+        cardCarouselIntervals.forEach((interval) => clearInterval(interval));
+        cardCarouselIntervals = [];
+        pagedProducts.forEach((item, index) => {
           if (Array.isArray(item.imagens) && item.imagens.length > 1) {
-            handleSwipeAndDrag(`card-carousel-${index}`);
+            handleSwipeAndDrag(`card-carousel-${index + start}`);
           }
         });
       }
 
-      // Inicia carrosséis automáticos para cada card com múltiplas imagens
-      function startCardCarousels(products) {
-        const carousels = document.querySelectorAll(
-          ".product-card .carousel-container"
-        );
-        return;
-        carousels.forEach((carousel, index) => {
-          const item = products[index];
-          if (item && Array.isArray(item.imagens) && item.imagens.length > 1) {
-            const images = carousel.querySelectorAll(".carousel-item");
-            let currentIndex = 0;
-            let timeoutId = null;
+      function updatePaginationControls(category, subcategory = "todos") {
+        const products = getProducts(category, subcategory);
+        const totalPages = Math.ceil(products.length / rowsPerPage);
+        const container = document.getElementById("pagination-controls");
+        container.innerHTML = "";
 
-            // Remove todos os event listeners ended antes de adicionar novos
-            function removeEndedListeners() {
-              images.forEach((media) => {
-                if (media.tagName.toLowerCase() === "video") {
-                  media.pause();
-                  media.currentTime = 0;
-                  media.onended = null;
-                }
-              });
-            }
+        if (totalPages <= 1) return;
 
-            function nextSlide() {
-              // Limpa timeout pendente para evitar múltiplas execuções
-              if (timeoutId) {
-                clearTimeout(timeoutId);
-                timeoutId = null;
-              }
-
-              // Remove listeners do slide atual
-              removeEndedListeners();
-              images[currentIndex].classList.remove("active");
-
-              currentIndex = (currentIndex + 1) % images.length;
-              images[currentIndex].classList.add("active");
-
-              const currentMedia = images[currentIndex];
-              if (currentMedia.tagName.toLowerCase() === "video") {
-                // Play vídeo e espera finalizar para avançar
-                currentMedia.play();
-                currentMedia.onended = () => {
-                  nextSlide();
-                };
-              } else {
-                // Imagem avança após 3 A 5 segundos
-                const minTime = 3000;
-                const maxTime = 5000;
-                timeoutId = setTimeout(
-                  nextSlide,
-                  minTime + Math.random() * (maxTime - minTime)
-                );
-              }
-            }
-
-            // Inicializa carrossel no primeiro slide
-            removeEndedListeners();
-            images.forEach((img) => img.classList.remove("active"));
-            images[0].classList.add("active");
-
-            const firstMedia = images[0];
-            if (firstMedia.tagName.toLowerCase() === "video") {
-              firstMedia.play();
-              firstMedia.onended = () => {
-                nextSlide();
-              };
-            } else {
-              const minTime = 3000;
-              const maxTime = 5000;
-              timeoutId = setTimeout(
-                nextSlide,
-                minTime + Math.random() * (maxTime - minTime)
-              );
-            }
+        const prevBtn = document.createElement("button");
+        prevBtn.textContent = "‹ Página Anterior"; // caractere de seta para esquerda, pode usar '<' mas esse é mais bonito
+        prevBtn.disabled = currentPage === 1;
+        prevBtn.className =
+          "bg-green-200 rounded px-2 py-1 text-lg disabled:opacity-50";
+        prevBtn.onclick = () => {
+          if (currentPage > 1) {
+            currentPage--;
+            renderProducts(category, subcategory, currentPage);
+            updatePaginationControls(category, subcategory);
+            setTimeout(() => {
+              window.scrollTo({ top: 0 + 160, behavior: "smooth" });
+            }, 50);
           }
-        });
+        };
+        container.appendChild(prevBtn);
+
+        const nextBtn = document.createElement("button");
+        nextBtn.textContent = "Próxima Página ›"; // caractere de seta para direita
+        nextBtn.disabled = currentPage === totalPages;
+        nextBtn.className =
+          "bg-green-200 rounded px-2 py-1 text-lg disabled:opacity-50";
+        nextBtn.onclick = () => {
+          if (currentPage < totalPages) {
+            currentPage++;
+            renderProducts(category, subcategory, currentPage);
+            updatePaginationControls(category, subcategory);
+            setTimeout(() => {
+              window.scrollTo({ top: 0 + 160, behavior: "smooth" });
+            }, 50);
+          }
+        };
+        container.appendChild(nextBtn);
       }
 
-      // Abre o modal com detalhes do produto selecionado
       window.openModal = function (itemIndex, category, subcategory = "todos") {
         let item;
         if (subcategory === "todos") {
@@ -703,17 +632,10 @@
           images[0].classList.add("active");
           if (currentModalCarouselInterval)
             clearInterval(currentModalCarouselInterval);
-          /* currentModalCarouselInterval = setInterval(() => {
-            images[currentIndex].classList.remove("active");
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].classList.add("active");
-          }, 5000); */
-
           handleSwipeAndDrag(carousel.id);
         }
       };
 
-      // Fecha o modal
       window.closeModal = function () {
         modal.style.display = "none";
         if (currentModalCarouselInterval) {
@@ -722,7 +644,6 @@
         }
       };
 
-      // Troca de imagem nos carrosséis manualmente
       window.changeImage = function (carouselId, direction) {
         const container = document.getElementById(carouselId);
         const images = container.querySelectorAll(".carousel-item");
@@ -741,15 +662,8 @@
         let newIndex =
           (currentIndex + direction + images.length) % images.length;
         images[newIndex].classList.add("active");
-
-        /* if (carouselId.includes("modal-carousel") && images.length > 1) {
-          currentModalCarouselInterval = setInterval(() => {
-            window.changeImage(carouselId, 1);
-          }, 5000);
-        } */
       };
 
-      // Enviar pedido via WhatsApp com dados do produto
       window.encomendar = function (titulo, preco, codigo) {
         const message = `Olá! Gostaria de encomendar o item: ${titulo} (Código: ${codigo}, R$ ${preco}). Por favor, me passe mais detalhes sobre a personalização.`;
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -758,7 +672,6 @@
         window.open(whatsappLink, "_blank");
       };
 
-      // Função para suportar swipe / arrastar no carrossel
       function handleSwipeAndDrag(carouselId) {
         const carousel = document.getElementById(carouselId);
         if (!carousel) return;
@@ -793,7 +706,6 @@
           e.preventDefault();
         };
 
-        // Eventos para mouse e touch
         carousel.addEventListener("mousedown", startDrag);
         carousel.addEventListener("mouseup", endDrag);
         carousel.addEventListener("mouseleave", endDrag);
@@ -803,24 +715,22 @@
         carousel.addEventListener("touchmove", drag, { passive: false });
       }
 
-      // Eventos para fechar modal por clique no botão ou fora do conteúdo
       modalCloseBtn.addEventListener("click", window.closeModal);
       window.addEventListener("click", (e) => {
         if (e.target === modal) window.closeModal();
       });
 
-      // Carrega o JSON, gera o menu e exibe a primeira categoria e submenu
       async function carregarCatalogo() {
         try {
           const response = await fetch("data/data.json");
           catalogoData = await response.json();
-
           renderMainMenu();
-
           const firstCategory = Object.keys(catalogoData)[0];
+          currentCategory = firstCategory;
+          currentSubcategory = "todos";
           renderSubcategories(firstCategory);
-          renderProducts(firstCategory, "todos");
-
+          renderProducts(firstCategory, "todos", currentPage);
+          updatePaginationControls(firstCategory, "todos");
           const firstBtn = document.querySelector(
             `.menu-btn[data-category="${firstCategory}"]`
           );
@@ -830,7 +740,6 @@
         }
       }
 
-      // Inicializa tudo após o carregamento do DOM
       document.addEventListener("DOMContentLoaded", carregarCatalogo);
     </script>
   </body>
