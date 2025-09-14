@@ -180,15 +180,31 @@
         width: 100%;
       }
 
+      #menu-container {
+        position: sticky;
+        top: 0;
+        background-color: #f7f3f1;
+        z-index: 1001;
+      }
+
+      #submenu-container {
+        position: sticky;
+        top: 2.9rem; /* altura do menu-container - ajuste conforme seu layout */
+        background-color: #f7f3f1;
+        z-index: 1000;
+        padding-bottom: 10px;
+      }
+
       #main-menu {
         display: flex;
         gap: 0.2rem;
         overflow-x: auto;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-
         justify-content: center; /* por padrão centralizado */
         align-items: center;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
       }
 
       /* No mobile, (menos de 768px por exemplo), alinha à esquerda para permitir scroll */
@@ -201,10 +217,6 @@
       /* Esconde barras de rolagem */
       #main-menu::-webkit-scrollbar {
         display: none;
-      }
-      #main-menu {
-        scrollbar-width: none;
-        -ms-overflow-style: none;
       }
 
       #submenu-container {
@@ -253,7 +265,7 @@
     </style>
   </head>
   <body class="p-4 md:p-8">
-    <header class="flex items-center justify-center mb-8 px-4">
+    <header class="flex items-center justify-center mb-4 px-4">
       <img
         srcset="logo.png"
         alt="Logo ARTESLIMAX"
@@ -273,16 +285,7 @@
     <!-- Div pai com overflow oculto para esconder o scroll -->
     <div id="menu-container" style="overflow-x: hidden; width: 100%">
       <!-- Div filha que armazena os botões e que pode rolar -->
-      <nav
-        id="main-menu"
-        style="
-          display: flex;
-          gap: 0.2rem;
-          overflow-x: auto;
-          white-space: nowrap;
-          -webkit-overflow-scrolling: touch;
-        "
-      >
+      <nav id="main-menu">
         <!-- Botões do menu serão inseridos aqui -->
       </nav>
     </div>
@@ -423,8 +426,8 @@
         if (!mainMenu) return;
 
         // Verifica se é dispositivo móvel (exemplo básico)
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
-        if (!isMobile) return;
+        /* const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        if (!isMobile) return; */
 
         // Se o scroll horizontal for possível
         if (mainMenu.scrollWidth > mainMenu.clientWidth) {
@@ -452,7 +455,7 @@
           const display = category.charAt(0).toUpperCase() + category.slice(1);
           const btn = document.createElement("button");
           btn.className =
-            "menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800";
+            "menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 shadow-md transition-all hover:bg-gray-800";
           btn.textContent = display;
           btn.setAttribute("data-category", category);
 
@@ -476,8 +479,8 @@
         const submenu = document.getElementById("subcategory-container");
         if (!submenu) return;
 
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
-        if (!isMobile) return;
+        /* const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        if (!isMobile) return; */
 
         if (submenu.scrollWidth > submenu.clientWidth) {
           // Scroll para a direita
@@ -502,14 +505,14 @@
 
         // Botão "Todos" para exibir todos os produtos
         subcategoryContainer.innerHTML += `
-    <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 m-1 rounded-full active" data-subcategory="todos">Todos</button>
+    <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 rounded-full active" data-subcategory="todos">Todos</button>
   `;
 
         // Botões para cada subcategoria
         subcategories.forEach((subcat) => {
           const display = subcat.charAt(0).toUpperCase() + subcat.slice(1);
           subcategoryContainer.innerHTML += `
-      <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 m-1 rounded-full" data-subcategory="${subcat}">${display}</button>
+      <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 my-1 rounded-full" data-subcategory="${subcat}">${display}</button>
     `;
         });
 
