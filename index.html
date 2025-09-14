@@ -329,7 +329,7 @@
       let cardCarouselIntervals = [];
 
       let currentPage = 1;
-      const rowsPerPage = 40;
+      const rowsPerPage = 30;
       let currentCategory = null;
       let currentSubcategory = null;
 
@@ -452,7 +452,7 @@
               .forEach((b) => b.classList.remove("active"));
             btn.classList.add("active");
             window.scrollTo({
-              top: document.getElementById("menu-container").offsetTop,
+              top: 160,
               behavior: "smooth",
             });
           };
@@ -498,7 +498,7 @@
             buttons.forEach((b) => b.classList.remove("active"));
             btn.classList.add("active");
             window.scrollTo({
-              top: document.getElementById("menu-container").offsetTop,
+              top: 160,
               behavior: "smooth",
             });
           });
