@@ -833,7 +833,7 @@
     ],
     "princesas": [
       {
-      "titulo": "Princesa 01",
+      "titulo": "Alice (no País das Maravilhas)",
       "codigo": "CAN108",
       "preco": "25,00",
       "imagens": [
@@ -841,7 +841,7 @@
       ]
       },
       {
-      "titulo": "Princesa 02",
+      "titulo": "Vanellope von Schweetz (Detona Ralph)",
       "codigo": "CAN109",
       "preco": "25,00",
       "imagens": [
@@ -849,7 +849,7 @@
       ]
       },
       {
-      "titulo": "Princesa 03",
+      "titulo": "Anastásia Nikolaevna (O mistério de Anna)",
       "codigo": "CAN110",
       "preco": "25,00",
       "imagens": [
@@ -857,7 +857,7 @@
       ]
       },
       {
-      "titulo": "Princesa 04",
+      "titulo": "Anna de Arendelle (Frozen)",
       "codigo": "CAN111",
       "preco": "25,00",
       "imagens": [
@@ -865,7 +865,7 @@
       ]
       },
       {
-      "titulo": "Princesa 05",
+      "titulo": "Ariel (Pequena Sereia)",
       "codigo": "CAN112",
       "preco": "25,00",
       "imagens": [
@@ -873,7 +873,7 @@
       ]
       },
       {
-      "titulo": "Princesa 06",
+      "titulo": "Aurora (A bela dormecida)",
       "codigo": "CAN113",
       "preco": "25,00",
       "imagens": [
@@ -881,7 +881,7 @@
       ]
       },
       {
-      "titulo": "Princesa 07",
+      "titulo": "Bella (& a Fera)",
       "codigo": "CAN114",
       "preco": "25,00",
       "imagens": [
@@ -889,7 +889,7 @@
       ]
       },
       {
-      "titulo": "Princesa 08",
+      "titulo": "Branca de Neve",
       "codigo": "CAN115",
       "preco": "25,00",
       "imagens": [
@@ -897,7 +897,7 @@
       ]
       },
       {
-      "titulo": "Princesa 09",
+      "titulo": "Elsa (Frozen)",
       "codigo": "CAN116",
       "preco": "25,00",
       "imagens": [
@@ -905,7 +905,7 @@
       ]
       },
       {
-      "titulo": "Princesa 10",
+      "titulo": "Esmeralda (O Corcunda de Notre-Dame)",
       "codigo": "CAN117",
       "preco": "25,00",
       "imagens": [
@@ -913,7 +913,7 @@
       ]
       },
       {
-      "titulo": "Princesa 11",
+      "titulo": "Jane Porter (Tarzan)",
       "codigo": "CAN118",
       "preco": "25,00",
       "imagens": [
@@ -921,7 +921,7 @@
       ]
       },
       {
-      "titulo": "Princesa 12",
+      "titulo": "Jasmine (Aladdin)",
       "codigo": "CAN119",
       "preco": "25,00",
       "imagens": [
@@ -929,7 +929,7 @@
       ]
       },
       {
-      "titulo": "Princesa 13",
+      "titulo": "Jessie (Toy Story)",
       "codigo": "CAN120",
       "preco": "25,00",
       "imagens": [
@@ -937,7 +937,7 @@
       ]
       },
       {
-      "titulo": "Princesa 14",
+      "titulo": "Mégara (Hércules)",
       "codigo": "CAN121",
       "preco": "25,00",
       "imagens": [
@@ -945,7 +945,7 @@
       ]
       },
       {
-      "titulo": "Princesa 15",
+      "titulo": "Melty",
       "codigo": "CAN122",
       "preco": "25,00",
       "imagens": [
@@ -953,7 +953,7 @@
       ]
       },
       {
-      "titulo": "Princesa 16",
+      "titulo": "Merida (Valente)",
       "codigo": "CAN123",
       "preco": "25,00",
       "imagens": [
@@ -961,7 +961,7 @@
       ]
       },
       {
-      "titulo": "Princesa 17",
+      "titulo": "Moana",
       "codigo": "CAN124",
       "preco": "25,00",
       "imagens": [
@@ -969,7 +969,7 @@
       ]
       },
       {
-      "titulo": "Princesa 18",
+      "titulo": "Mulan",
       "codigo": "CAN125",
       "preco": "25,00",
       "imagens": [
@@ -977,7 +977,7 @@
       ]
       },
       {
-      "titulo": "Princesa 19",
+      "titulo": "Nala (Rei Leão)",
       "codigo": "CAN126",
       "preco": "25,00",
       "imagens": [
@@ -985,7 +985,7 @@
       ]
       },
       {
-      "titulo": "Princesa 20",
+      "titulo": "Pocahontas",
       "codigo": "CAN127",
       "preco": "25,00",
       "imagens": [
@@ -993,7 +993,7 @@
       ]
       },
       {
-      "titulo": "Princesa 21",
+      "titulo": "Rapunzel",
       "codigo": "CAN128",
       "preco": "25,00",
       "imagens": [
@@ -1001,7 +1001,7 @@
       ]
       },
       {
-      "titulo": "Princesa 22",
+      "titulo": "Sininho (Peter Pan)",
       "codigo": "CAN129",
       "preco": "25,00",
       "imagens": [
@@ -1009,7 +1009,7 @@
       ]
       },
       {
-      "titulo": "Princesa 23",
+      "titulo": "Tiana (A princesa e o sapo)",
       "codigo": "CAN130",
       "preco": "25,00",
       "imagens": [
