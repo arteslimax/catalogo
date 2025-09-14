@@ -43,130 +43,193 @@
     ],
     "amizade": [
       {
-      "titulo": "Amizade 01",
-      "codigo": "CAN007",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/1MOCKUPS.jpg", "canecas/AMIZADE/1 AMIZADE.png"]
+        "titulo": "Amizade 01",
+        "codigo": "CAN007",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/1MOCKUPS.jpg",
+          "canecas/AMIZADE/1 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 02",
-      "codigo": "CAN008",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/2MOCKUPS.jpg", "canecas/AMIZADE/2 AMIZADE.png"]
+        "titulo": "Amizade 02",
+        "codigo": "CAN008",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/2MOCKUPS.jpg",
+          "canecas/AMIZADE/2 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 03",
-      "codigo": "CAN009",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/3MOCKUPS.jpg", "canecas/AMIZADE/3 AMIZADE.png"]
+        "titulo": "Amizade 03",
+        "codigo": "CAN009",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/3MOCKUPS.webp",
+          "canecas/AMIZADE/3 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 04",
-      "codigo": "CAN010",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/4MOCKUPS.jpg", "canecas/AMIZADE/4 AMIZADE.png"]
+        "titulo": "Amizade 04",
+        "codigo": "CAN010",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/4MOCKUPS.webp",
+          "canecas/AMIZADE/4 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 05",
-      "codigo": "CAN011",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/5MOCKUPS.jpg", "canecas/AMIZADE/5 AMIZADE.png"]
+        "titulo": "Amizade 05",
+        "codigo": "CAN011",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/5MOCKUPS.webp",
+          "canecas/AMIZADE/5 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 06",
-      "codigo": "CAN012",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/6MOCKUPS.jpg", "canecas/AMIZADE/6 AMIZADE.png"]
+        "titulo": "Amizade 06",
+        "codigo": "CAN012",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/6MOCKUPS.webp",
+          "canecas/AMIZADE/6 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 07",
-      "codigo": "CAN013",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/7MOCKUPS.jpg", "canecas/AMIZADE/7 AMIZADE.png"]
+        "titulo": "Amizade 07",
+        "codigo": "CAN013",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/7MOCKUPS.webp",
+          "canecas/AMIZADE/7 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 08",
-      "codigo": "CAN014",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/8MOCKUPS.jpg", "canecas/AMIZADE/8 AMIZADE.png"]
+        "titulo": "Amizade 08",
+        "codigo": "CAN014",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/8MOCKUPS.webp",
+          "canecas/AMIZADE/8 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 09",
-      "codigo": "CAN015",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/9MOCKUPS.jpg", "canecas/AMIZADE/9 AMIZADE.png"]
+        "titulo": "Amizade 09",
+        "codigo": "CAN015",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/9MOCKUPS.webp",
+          "canecas/AMIZADE/9 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 10",
-      "codigo": "CAN016",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/10MOCKUPS.jpg", "canecas/AMIZADE/10 AMIZADE.png"]
+        "titulo": "Amizade 10",
+        "codigo": "CAN016",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/10MOCKUPS.webp",
+          "canecas/AMIZADE/10 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 11",
-      "codigo": "CAN017",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/11MOCKUPS.jpg", "canecas/AMIZADE/11 AMIZADE.png"]
+        "titulo": "Amizade 11",
+        "codigo": "CAN017",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/11MOCKUPS.jpg",
+          "canecas/AMIZADE/11 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 12",
-      "codigo": "CAN018",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/12MOCKUPS.jpg", "canecas/AMIZADE/12 AMIZADE.png"]
+        "titulo": "Amizade 12",
+        "codigo": "CAN018",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/12MOCKUPS.jpg",
+          "canecas/AMIZADE/12 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 13",
-      "codigo": "CAN019",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/13MOCKUPS.jpg", "canecas/AMIZADE/13 AMIZADE.png"]
+        "titulo": "Amizade 13",
+        "codigo": "CAN019",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/13MOCKUPS.jpg",
+          "canecas/AMIZADE/13 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 14",
-      "codigo": "CAN020",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/14MOCKUPS.jpg", "canecas/AMIZADE/14 AMIZADE.png"]
+        "titulo": "Amizade 14",
+        "codigo": "CAN020",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/14MOCKUPS.jpg",
+          "canecas/AMIZADE/14 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 15",
-      "codigo": "CAN021",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/15MOCKUPS.jpg", "canecas/AMIZADE/15 AMIZADE.png"]
+        "titulo": "Amizade 15",
+        "codigo": "CAN021",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/15MOCKUPS.jpg",
+          "canecas/AMIZADE/15 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 16",
-      "codigo": "CAN022",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/16MOCKUPS.jpg", "canecas/AMIZADE/16 AMIZADE.png"]
+        "titulo": "Amizade 16",
+        "codigo": "CAN022",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/16MOCKUPS.jpg",
+          "canecas/AMIZADE/16 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 17",
-      "codigo": "CAN023",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/17MOCKUPS.jpg", "canecas/AMIZADE/17 AMIZADE.png"]
+        "titulo": "Amizade 17",
+        "codigo": "CAN023",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/17MOCKUPS.jpg",
+          "canecas/AMIZADE/17 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 18",
-      "codigo": "CAN024",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/18MOCKUPS.jpg", "canecas/AMIZADE/18 AMIZADE.png"]
+        "titulo": "Amizade 18",
+        "codigo": "CAN024",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/18MOCKUPS.webp",
+          "canecas/AMIZADE/18 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 19",
-      "codigo": "CAN025",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/19MOCKUPS.jpg", "canecas/AMIZADE/19 AMIZADE.png"]
+        "titulo": "Amizade 19",
+        "codigo": "CAN025",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/19MOCKUPS.jpg",
+          "canecas/AMIZADE/19 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 20",
-      "codigo": "CAN026",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/20MOCKUPS.jpg", "canecas/AMIZADE/20 AMIZADE.png"]
+        "titulo": "Amizade 20",
+        "codigo": "CAN026",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/20MOCKUPS.webp",
+          "canecas/AMIZADE/20 AMIZADE.png"
+        ]
       },
       {
-      "titulo": "Amizade 21",
-      "codigo": "CAN027",
-      "preco": "25,00",
-      "imagens": ["canecas/AMIZADE/21MOCKUPS.jpg", "canecas/AMIZADE/21 AMIZADE.png"]
+        "titulo": "Amizade 21",
+        "codigo": "CAN027",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/AMIZADE/21MOCKUPS.jpg",
+          "canecas/AMIZADE/21 AMIZADE.png"
+        ]
       }
     ],
     "aniversário": [
