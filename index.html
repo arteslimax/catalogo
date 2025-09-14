@@ -687,11 +687,11 @@
           images[0].classList.add("active");
           if (currentModalCarouselInterval)
             clearInterval(currentModalCarouselInterval);
-          currentModalCarouselInterval = setInterval(() => {
+          /* currentModalCarouselInterval = setInterval(() => {
             images[currentIndex].classList.remove("active");
             currentIndex = (currentIndex + 1) % images.length;
             images[currentIndex].classList.add("active");
-          }, 5000);
+          }, 5000); */
 
           handleSwipeAndDrag(carousel.id);
         }
@@ -726,11 +726,11 @@
           (currentIndex + direction + images.length) % images.length;
         images[newIndex].classList.add("active");
 
-        if (carouselId.includes("modal-carousel") && images.length > 1) {
+        /* if (carouselId.includes("modal-carousel") && images.length > 1) {
           currentModalCarouselInterval = setInterval(() => {
             window.changeImage(carouselId, 1);
           }, 5000);
-        }
+        } */
       };
 
       // Enviar pedido via WhatsApp com dados do produto
