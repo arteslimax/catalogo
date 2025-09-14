@@ -243,7 +243,7 @@
   <body class="p-4 md:p-8">
     <header class="flex items-center justify-center mb-8 px-4">
       <img
-        src="logo.png"
+        srcset="logo.png"
         alt="Logo ARTESLIMAX"
         class="w-28 h-28 sm:w-32 sm:h-32 object-contain mr-3"
       />
@@ -327,12 +327,12 @@
               .map((src, imgIndex) => {
                 if (isVideoUrl(src)) {
                   // Video com autoplay, loop e muted
-                  return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                  return `<video srcset="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
                     imgIndex === 0 ? "active" : ""
                   }></video>`;
                 } else {
                   // Imagem simples
-                  return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
+                  return `<img srcset="${src}" alt="Imagem ${imgIndex + 1} de ${
                     item.titulo
                   }" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md ${
                     imgIndex === 0 ? "active" : ""
