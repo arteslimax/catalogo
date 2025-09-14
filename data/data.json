@@ -830,6 +830,192 @@
           "canecas/NATAL/67MOCKUPS.jpg"
         ]
       }
+    ],
+    "princesas": [
+      {
+      "titulo": "Princesa 01",
+      "codigo": "CAN108",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/1MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 02",
+      "codigo": "CAN109",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/2MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 03",
+      "codigo": "CAN110",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/3MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 04",
+      "codigo": "CAN111",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/4MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 05",
+      "codigo": "CAN112",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/5MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 06",
+      "codigo": "CAN113",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/6MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 07",
+      "codigo": "CAN114",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/7MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 08",
+      "codigo": "CAN115",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/8MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 09",
+      "codigo": "CAN116",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/9MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 10",
+      "codigo": "CAN117",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/10MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 11",
+      "codigo": "CAN118",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/11MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 12",
+      "codigo": "CAN119",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/12MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 13",
+      "codigo": "CAN120",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/13MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 14",
+      "codigo": "CAN121",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/14MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 15",
+      "codigo": "CAN122",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/15MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 16",
+      "codigo": "CAN123",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/16MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 17",
+      "codigo": "CAN124",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/17MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 18",
+      "codigo": "CAN125",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/18MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 19",
+      "codigo": "CAN126",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/19MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 20",
+      "codigo": "CAN127",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/20MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 21",
+      "codigo": "CAN128",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/21MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 22",
+      "codigo": "CAN129",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/22MOCKUPS.jpg"
+      ]
+      },
+      {
+      "titulo": "Princesa 23",
+      "codigo": "CAN130",
+      "preco": "25,00",
+      "imagens": [
+        "canecas/PRINCESAS/23MOCKUPS.jpg"
+      ]
+      }
     ]
   },
   "camisas": {
