@@ -1,0 +1,2002 @@
+{
+  "canecas": {
+    "flork": [
+      {
+        "titulo": "Flork Torcedor 01",
+        "codigo": "CAN001",
+        "preco": "25,00",
+        "imagens": ["canecas/flork-brasil/FLORK01.jpg"]
+      },
+      {
+        "titulo": "Flork Torcedor 02",
+        "codigo": "CAN002",
+        "preco": "25,00",
+        "imagens": [
+          "canecas/flork-brasil/FLORK02.jpg",
+          "canecas/flork-brasil/FLORK07.mp4"
+        ]
+      },
+      {
+        "titulo": "Flork Torcedor 03",
+        "codigo": "CAN003",
+        "preco": "25,00",
+        "imagens": ["canecas/flork-brasil/FLORK03.jpg"]
+      },
+      {
+        "titulo": "Flork Torcedor 04",
+        "codigo": "CAN004",
+        "preco": "25,00",
+        "imagens": ["canecas/flork-brasil/FLORK04.jpg"]
+      },
+      {
+        "titulo": "Flork Torcedor 05",
+        "codigo": "CAN005",
+        "preco": "25,00",
+        "imagens": ["canecas/flork-brasil/FLORK05.jpg"]
+      },
+      {
+        "titulo": "Flork Torcedor 06",
+        "codigo": "CAN006",
+        "preco": "25,00",
+        "imagens": ["canecas/flork-brasil/FLORK06.jpg"]
+      }
+    ],
+    "amizade": [
+      {
+        "titulo": "Amizade 01",
+        "codigo": "CAN007",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/1MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 02",
+        "codigo": "CAN008",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/2MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 03",
+        "codigo": "CAN009",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/3MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 04",
+        "codigo": "CAN010",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/4MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 05",
+        "codigo": "CAN011",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/5MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 06",
+        "codigo": "CAN012",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/6MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 07",
+        "codigo": "CAN013",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/7MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 08",
+        "codigo": "CAN014",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/8MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 09",
+        "codigo": "CAN015",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/9MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 10",
+        "codigo": "CAN016",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/10MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 11",
+        "codigo": "CAN017",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/11MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 12",
+        "codigo": "CAN018",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/12MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 13",
+        "codigo": "CAN019",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/13MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 14",
+        "codigo": "CAN020",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/14MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 15",
+        "codigo": "CAN021",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/15MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 16",
+        "codigo": "CAN022",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/16MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 17",
+        "codigo": "CAN023",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/17MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 18",
+        "codigo": "CAN024",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/18MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 19",
+        "codigo": "CAN025",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/19MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 20",
+        "codigo": "CAN026",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/20MOCKUPS.webp"]
+      },
+      {
+        "titulo": "Amizade 21",
+        "codigo": "CAN027",
+        "preco": "25,00",
+        "imagens": ["canecas/AMIZADE/21MOCKUPS.webp"]
+      }
+    ],
+    "aniversário": [
+      {
+        "titulo": "Aniversário 01",
+        "codigo": "CAN028",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/1MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 02 (adicione foto)",
+        "codigo": "CAN029",
+        "preco": "27,00",
+        "imagens": ["canecas/ANIVERSÁRIO/2MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 03",
+        "codigo": "CAN030",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/3MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 04 (adicione foto)",
+        "codigo": "CAN031",
+        "preco": "27,00",
+        "imagens": ["canecas/ANIVERSÁRIO/4MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 05",
+        "codigo": "CAN032",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/5MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 06 (adicione foto)",
+        "codigo": "CAN033",
+        "preco": "27,00",
+        "imagens": ["canecas/ANIVERSÁRIO/6MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 07",
+        "codigo": "CAN034",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/7MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 08 (adicione foto)",
+        "codigo": "CAN035",
+        "preco": "27,00",
+        "imagens": ["canecas/ANIVERSÁRIO/8MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 09",
+        "codigo": "CAN036",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/9MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 10",
+        "codigo": "CAN037",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/10MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 11",
+        "codigo": "CAN038",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/11MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aniversário 12",
+        "codigo": "CAN039",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/12MOCKUPS.jpg"]
+      }
+    ],
+    "natal": [
+      {
+        "titulo": "Natal 01",
+        "codigo": "CAN040",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/1MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 02",
+        "codigo": "CAN041",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/2MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 03",
+        "codigo": "CAN042",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/3MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 04",
+        "codigo": "CAN043",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/4MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 06",
+        "codigo": "CAN045",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/6MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 07",
+        "codigo": "CAN046",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/7MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 08",
+        "codigo": "CAN047",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/8MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 09",
+        "codigo": "CAN048",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/9MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 10",
+        "codigo": "CAN049",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/10MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 11",
+        "codigo": "CAN050",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/11MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 12",
+        "codigo": "CAN051",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/12MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 13",
+        "codigo": "CAN052",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/13MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 14",
+        "codigo": "CAN053",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/14MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 15",
+        "codigo": "CAN054",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/15MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 16",
+        "codigo": "CAN055",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/16MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 17",
+        "codigo": "CAN056",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/17MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 18",
+        "codigo": "CAN057",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/18MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 19",
+        "codigo": "CAN058",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/19MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 20",
+        "codigo": "CAN059",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/20MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 21",
+        "codigo": "CAN060",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/21MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 22",
+        "codigo": "CAN061",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/22MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 23",
+        "codigo": "CAN062",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/23MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 24",
+        "codigo": "CAN063",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/24MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 25",
+        "codigo": "CAN064",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/25MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 26",
+        "codigo": "CAN065",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/26MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 27",
+        "codigo": "CAN066",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/27MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 28",
+        "codigo": "CAN067",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/28MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 29",
+        "codigo": "CAN068",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/29MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 30",
+        "codigo": "CAN069",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/30MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 31",
+        "codigo": "CAN070",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/31MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 32",
+        "codigo": "CAN071",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/32MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 33",
+        "codigo": "CAN072",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/33MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 34",
+        "codigo": "CAN073",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/34MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 35",
+        "codigo": "CAN074",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/35MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 36",
+        "codigo": "CAN075",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/36MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 37",
+        "codigo": "CAN076",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/37MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 38",
+        "codigo": "CAN077",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/38MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 39",
+        "codigo": "CAN078",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/39MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 41",
+        "codigo": "CAN080",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/41MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 42",
+        "codigo": "CAN081",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/42MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 43",
+        "codigo": "CAN082",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/43MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 44",
+        "codigo": "CAN083",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/44MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 45",
+        "codigo": "CAN084",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/45MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 46",
+        "codigo": "CAN085",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/46MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 47",
+        "codigo": "CAN086",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/47MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 48",
+        "codigo": "CAN087",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/48MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 49",
+        "codigo": "CAN088",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/49MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 50",
+        "codigo": "CAN089",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/50MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 51",
+        "codigo": "CAN090",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/51MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 52",
+        "codigo": "CAN091",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/52MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 53",
+        "codigo": "CAN092",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/53MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 54",
+        "codigo": "CAN093",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/54MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 55",
+        "codigo": "CAN094",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/55MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 56",
+        "codigo": "CAN095",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/56MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 57",
+        "codigo": "CAN096",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/57MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 58",
+        "codigo": "CAN097",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/58MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 59",
+        "codigo": "CAN098",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/59MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 60",
+        "codigo": "CAN099",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/60MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 61",
+        "codigo": "CAN100",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/61MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 62",
+        "codigo": "CAN101",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/62MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 63",
+        "codigo": "CAN102",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/63MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 64",
+        "codigo": "CAN103",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/64MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 65",
+        "codigo": "CAN104",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/65MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 66",
+        "codigo": "CAN105",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/66MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Natal 67",
+        "codigo": "CAN107",
+        "preco": "25,00",
+        "imagens": ["canecas/NATAL/67MOCKUPS.jpg"]
+      }
+    ],
+    "princesas": [
+      {
+        "titulo": "Alice (no País das Maravilhas)",
+        "codigo": "CAN108",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/1MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Vanellope von Schweetz (Detona Ralph)",
+        "codigo": "CAN109",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/2MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Anastásia Nikolaevna (O mistério de Anna)",
+        "codigo": "CAN110",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/3MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Anna de Arendelle (Frozen)",
+        "codigo": "CAN111",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/4MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Ariel (Pequena Sereia)",
+        "codigo": "CAN112",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/5MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Aurora (A bela dormecida)",
+        "codigo": "CAN113",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/6MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bella (& a Fera)",
+        "codigo": "CAN114",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/7MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Branca de Neve",
+        "codigo": "CAN115",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/8MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Elsa (Frozen)",
+        "codigo": "CAN116",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/9MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Esmeralda (O Corcunda de Notre-Dame)",
+        "codigo": "CAN117",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/10MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Jane Porter (Tarzan)",
+        "codigo": "CAN118",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/11MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Jasmine (Aladdin)",
+        "codigo": "CAN119",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/12MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Jessie (Toy Story)",
+        "codigo": "CAN120",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/13MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mégara (Hércules)",
+        "codigo": "CAN121",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/14MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Melty",
+        "codigo": "CAN122",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/15MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Merida (Valente)",
+        "codigo": "CAN123",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/16MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Moana",
+        "codigo": "CAN124",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/17MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mulan",
+        "codigo": "CAN125",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/18MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Nala (Rei Leão)",
+        "codigo": "CAN126",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/19MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Pocahontas",
+        "codigo": "CAN127",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/20MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Rapunzel",
+        "codigo": "CAN128",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/21MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Sininho (Peter Pan)",
+        "codigo": "CAN129",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/22MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Tiana (A princesa e o sapo)",
+        "codigo": "CAN130",
+        "preco": "25,00",
+        "imagens": ["canecas/PRINCESAS/23MOCKUPS.jpg"]
+      }
+    ],
+    "kombi": [
+      {
+        "titulo": "Kombi 01",
+        "codigo": "CAN131",
+        "preco": "25,00",
+        "imagens": ["canecas/KOMBI/1MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Kombi 02",
+        "codigo": "CAN132",
+        "preco": "25,00",
+        "imagens": ["canecas/KOMBI/2MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Kombi 03",
+        "codigo": "CAN133",
+        "preco": "25,00",
+        "imagens": ["canecas/KOMBI/3MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Kombi 04",
+        "codigo": "CAN134",
+        "preco": "25,00",
+        "imagens": ["canecas/KOMBI/4MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Kombi 05",
+        "codigo": "CAN135",
+        "preco": "25,00",
+        "imagens": ["canecas/KOMBI/5MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Kombi 06",
+        "codigo": "CAN136",
+        "preco": "25,00",
+        "imagens": ["canecas/KOMBI/6MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Kombi 07",
+        "codigo": "CAN137",
+        "preco": "25,00",
+        "imagens": ["canecas/KOMBI/7MOCKUPS.jpg"]
+      }
+    ],
+    "militar": [
+      {
+        "titulo": "Militar 01",
+        "codigo": "CAN138",
+        "preco": "25,00",
+        "imagens": ["canecas/MILITAR/1MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Militar 02",
+        "codigo": "CAN139",
+        "preco": "25,00",
+        "imagens": ["canecas/MILITAR/2MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Militar 03",
+        "codigo": "CAN140",
+        "preco": "25,00",
+        "imagens": ["canecas/MILITAR/3MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Militar 04",
+        "codigo": "CAN141",
+        "preco": "25,00",
+        "imagens": ["canecas/MILITAR/4MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Militar 05",
+        "codigo": "CAN142",
+        "preco": "25,00",
+        "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Militar 06",
+        "codigo": "CAN143",
+        "preco": "25,00",
+        "imagens": ["canecas/MILITAR/6MOCKUPS.jpg"]
+      }
+    ],
+
+    "games": [
+      {
+        "titulo": "Angry Birds 01",
+        "codigo": "GAME001",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 02",
+        "codigo": "GAME001-2",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 03",
+        "codigo": "GAME001-3",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 04",
+        "codigo": "GAME001-4",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 05",
+        "codigo": "GAME001-5",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 06",
+        "codigo": "GAME001-6",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 07",
+        "codigo": "GAME001-7",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 08",
+        "codigo": "GAME001-8",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Angry Birds 09",
+        "codigo": "GAME001-9",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ANGRY_BIRDS/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 01",
+        "codigo": "GAME002",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 02",
+        "codigo": "GAME002-2",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 03",
+        "codigo": "GAME002-3",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 04",
+        "codigo": "GAME002-4",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 05",
+        "codigo": "GAME002-5",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 06",
+        "codigo": "GAME002-6",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 07",
+        "codigo": "GAME002-7",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Assassin's Creed 08",
+        "codigo": "GAME002-8",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/ASSASSINS_CREED/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Batman 01",
+        "codigo": "CAN144",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATMAN/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Batman 02",
+        "codigo": "CAN145",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATMAN/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Batman 03",
+        "codigo": "CAN146",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATMAN/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Batman 04",
+        "codigo": "CAN147",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATMAN/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Batman 05",
+        "codigo": "CAN148",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATMAN/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Batman 06",
+        "codigo": "CAN149",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATMAN/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 01",
+        "codigo": "CAN150",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 02",
+        "codigo": "CAN151",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 03",
+        "codigo": "CAN152",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 04",
+        "codigo": "CAN153",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 05",
+        "codigo": "CAN154",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 06",
+        "codigo": "CAN155",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 07",
+        "codigo": "CAN156",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Battlefield 08",
+        "codigo": "CAN157",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BATTLEFIELD/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bloodborne 01",
+        "codigo": "CAN158",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BLOODBBORNE/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bloodborne 02",
+        "codigo": "CAN159",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BLOODBBORNE/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bloodborne 03",
+        "codigo": "CAN160",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BLOODBBORNE/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bloodborne 04",
+        "codigo": "CAN161",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BLOODBBORNE/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bloodborne 05",
+        "codigo": "CAN162",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BLOODBBORNE/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bloodborne 06",
+        "codigo": "CAN163",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BLOODBBORNE/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Bloodborne 07",
+        "codigo": "CAN164",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/BLOODBBORNE/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Crash 01",
+        "codigo": "CAN165",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/CRASH/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Crash 02",
+        "codigo": "CAN166",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/CRASH/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Cyberpunk 2077 01",
+        "codigo": "CAN167",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/CYBERPUNK_2077/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Cyberpunk 2077 02",
+        "codigo": "CAN168",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/CYBERPUNK_2077/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Cyberpunk 2077 03",
+        "codigo": "CAN169",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/CYBERPUNK_2077/11 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 01",
+        "codigo": "CAN170",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 02",
+        "codigo": "CAN171",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 03",
+        "codigo": "CAN172",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 04",
+        "codigo": "CAN173",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 05",
+        "codigo": "CAN174",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 06",
+        "codigo": "CAN175",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 07",
+        "codigo": "CAN176",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 08",
+        "codigo": "CAN177",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 09",
+        "codigo": "CAN178",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 10",
+        "codigo": "CAN179",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/10 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 11",
+        "codigo": "CAN180",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/11 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 12",
+        "codigo": "CAN181",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/12 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 13",
+        "codigo": "CAN182",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/13 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dark Souls 14",
+        "codigo": "CAN183",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DARK_SOULS/14 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 01",
+        "codigo": "CAN184",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 02",
+        "codigo": "CAN185",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 03",
+        "codigo": "CAN186",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 04",
+        "codigo": "CAN187",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 05",
+        "codigo": "CAN188",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 06",
+        "codigo": "CAN189",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 07",
+        "codigo": "CAN190",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 08",
+        "codigo": "CAN191",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 09",
+        "codigo": "CAN192",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 10",
+        "codigo": "CAN193",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/10 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 11",
+        "codigo": "CAN194",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/11 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 12",
+        "codigo": "CAN195",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/12 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 13",
+        "codigo": "CAN196",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/13 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Days Gone 14",
+        "codigo": "CAN197",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DAYS_GONE/14 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Detroit 01",
+        "codigo": "CAN198",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DETROIT/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Detroit 02",
+        "codigo": "CAN199",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DETROIT/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Detroit 03",
+        "codigo": "CAN200",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DETROIT/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Detroit 04",
+        "codigo": "CAN201",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DETROIT/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 01",
+        "codigo": "CAN202",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 02",
+        "codigo": "CAN203",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 03",
+        "codigo": "CAN204",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 04",
+        "codigo": "CAN205",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 05",
+        "codigo": "CAN206",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 06",
+        "codigo": "CAN207",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 07",
+        "codigo": "CAN208",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Dying Light 08",
+        "codigo": "CAN209",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/DYNG_LIGHT/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 01",
+        "codigo": "CAN210",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 02",
+        "codigo": "CAN211",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 03",
+        "codigo": "CAN212",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 04",
+        "codigo": "CAN213",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 05",
+        "codigo": "CAN214",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 06",
+        "codigo": "CAN215",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 07",
+        "codigo": "CAN216",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Forza 08",
+        "codigo": "CAN217",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/FORZA/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 01",
+        "codigo": "CAN218",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 02",
+        "codigo": "CAN219",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 03",
+        "codigo": "CAN220",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 04",
+        "codigo": "CAN221",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 05",
+        "codigo": "CAN222",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 06",
+        "codigo": "CAN223",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 07",
+        "codigo": "CAN224",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 08",
+        "codigo": "CAN225",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 09",
+        "codigo": "CAN226",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 10",
+        "codigo": "CAN227",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/10 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 11",
+        "codigo": "CAN228",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/11 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Gears of War 12",
+        "codigo": "CAN229",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GEARS_OF_WAR/12 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "God of War 01",
+        "codigo": "CAN230",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GOOD_OF_WAR/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "God of War 02",
+        "codigo": "CAN231",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GOOD_OF_WAR/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "God of War 03",
+        "codigo": "CAN232",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GOOD_OF_WAR/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "God of War 04",
+        "codigo": "CAN233",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GOOD_OF_WAR/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "God of War 05",
+        "codigo": "CAN234",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GOOD_OF_WAR/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 01",
+        "codigo": "CAN235",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 02",
+        "codigo": "CAN236",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 03",
+        "codigo": "CAN237",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 04",
+        "codigo": "CAN238",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 05",
+        "codigo": "CAN239",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 06",
+        "codigo": "CAN240",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 07",
+        "codigo": "CAN241",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 08",
+        "codigo": "CAN242",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "GTA 09",
+        "codigo": "CAN243",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/GTA/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Halo 01",
+        "codigo": "CAN244",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HALO/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Halo 02",
+        "codigo": "CAN245",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HALO/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Halo 03",
+        "codigo": "CAN246",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HALO/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Halo 04",
+        "codigo": "CAN247",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HALO/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Halo 05",
+        "codigo": "CAN248",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HALO/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Halo 06",
+        "codigo": "CAN249",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HALO/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Homem Aranha 01",
+        "codigo": "CAN250",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HOMEM_ARANHA/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Homem Aranha 02",
+        "codigo": "CAN251",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HOMEM_ARANHA/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Homem Aranha 03",
+        "codigo": "CAN252",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HOMEM_ARANHA/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Homem Aranha 04",
+        "codigo": "CAN253",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HOMEM_ARANHA/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Homem Aranha 05",
+        "codigo": "CAN254",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HOMEM_ARANHA/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 01",
+        "codigo": "CAN255",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 02",
+        "codigo": "CAN256",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 03",
+        "codigo": "CAN257",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 04",
+        "codigo": "CAN258",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 05",
+        "codigo": "CAN259",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 06",
+        "codigo": "CAN260",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 07",
+        "codigo": "CAN261",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Horizon Zero Dawn 08",
+        "codigo": "CAN262",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/HORIZON_ZERO_DAWN/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 01",
+        "codigo": "CAN263",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 02",
+        "codigo": "CAN264",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 03",
+        "codigo": "CAN265",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 04",
+        "codigo": "CAN266",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 05",
+        "codigo": "CAN267",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 06",
+        "codigo": "CAN268",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 07",
+        "codigo": "CAN269",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 08",
+        "codigo": "CAN270",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 09",
+        "codigo": "CAN271",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 10",
+        "codigo": "CAN272",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/10 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 11",
+        "codigo": "CAN273",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/11 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 12",
+        "codigo": "CAN274",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/12 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Just Cause 13",
+        "codigo": "CAN275",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/JUST_CAUSE/13 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 01",
+        "codigo": "CAN276",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 02",
+        "codigo": "CAN277",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 03",
+        "codigo": "CAN278",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 04",
+        "codigo": "CAN279",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 05",
+        "codigo": "CAN280",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 06",
+        "codigo": "CAN281",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 07",
+        "codigo": "CAN282",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 08",
+        "codigo": "CAN283",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 09",
+        "codigo": "CAN284",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 10",
+        "codigo": "CAN285",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/10 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 11",
+        "codigo": "CAN286",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/11 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Mafia 12",
+        "codigo": "CAN287",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MAFIA/12 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 01",
+        "codigo": "CAN288",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/1MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 02",
+        "codigo": "CAN289",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/2MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 03",
+        "codigo": "CAN290",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/3MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 04",
+        "codigo": "CAN291",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/4MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 05",
+        "codigo": "CAN292",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/5MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 06",
+        "codigo": "CAN293",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/6MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 07",
+        "codigo": "CAN294",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/7MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "Minecraft 08",
+        "codigo": "CAN295",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/MINECRAFT/8MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Division 01",
+        "codigo": "CAN296",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_DIVISION/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Division 02",
+        "codigo": "CAN297",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_DIVISION/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Division 03",
+        "codigo": "CAN298",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_DIVISION/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Division 04",
+        "codigo": "CAN299",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_DIVISION/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us 01",
+        "codigo": "GAME023",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 01",
+        "codigo": "CAN300",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/1 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 02",
+        "codigo": "CAN301",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/2 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 03",
+        "codigo": "CAN302",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/3 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 04",
+        "codigo": "CAN303",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/4 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 05",
+        "codigo": "CAN304",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/5 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 06",
+        "codigo": "CAN305",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/6 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 07",
+        "codigo": "CAN306",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/7 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 08",
+        "codigo": "CAN307",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/8 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 09",
+        "codigo": "CAN308",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/9 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 10",
+        "codigo": "CAN309",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/10 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 11",
+        "codigo": "CAN310",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/11 MOCKUPS.jpg"]
+      },
+      {
+        "titulo": "The Last of Us Part 2 12",
+        "codigo": "CAN311",
+        "preco": "25,00",
+        "imagens": ["canecas/GAMES/THE_LAST_OF_US_PART2/12 MOCKUPS.jpg"]
+      }
+    ]
+  },
+  "camisas": {
+    "simples": [
+      {
+        "titulo": "Camisa Frosted",
+        "codigo": "CAM001",
+        "preco": "30,00",
+        "imagens": [
+          "camisas/frosted/FROSTED1.png",
+          "camisas/frosted/FROSTED3.png"
+        ]
+      },
+      {
+        "titulo": "Moletom Frosted",
+        "codigo": "MOL002",
+        "preco": "50,00",
+        "imagens": [
+          "camisas/frosted/FROSTED1.png",
+          "camisas/frosted/FROSTED2.png"
+        ]
+      }
+    ]
+  }
+}
