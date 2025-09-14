@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARTESLIMAX Personalização</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Custom Fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="favicon-256.ico" />
+
     <style>
       body {
         font-family: sans-serif;
         background-color: #f7f3f1;
         color: #333;
-        margin: 0; /* remove espaçamentos padrão */
+        margin: 0;
         padding: 0;
-        min-height: 100vh; /* garante ocupar a tela toda */
-        display: flex; /* facilita centralizar ou expandir conteúdo */
+        min-height: 100vh;
+        display: flex;
         flex-direction: column;
       }
       .dancing-script {
@@ -36,15 +36,15 @@
         display: block;
       }
       .card-carousel-media {
-        object-fit: cover; /* Corta a mídia para preencher o contêiner */
+        object-fit: cover;
       }
       .modal-carousel-media {
-        object-fit: contain; /* Adapta a mídia para caber no contêiner, mantendo a proporção */
+        object-fit: contain;
       }
       .carousel-container {
         position: relative;
         width: 100%;
-        padding-top: 100%; /* Proporção 1:1 */
+        padding-top: 100%;
         overflow: hidden;
         background-color: white;
       }
@@ -55,37 +55,33 @@
         width: 100%;
         height: 100%;
       }
-
       .modal-carousel-container {
         position: relative;
         width: 100%;
-        max-width: 400px; /* tamanho máximo do modal */
-        aspect-ratio: 1 / 1; /* garante proporção quadrada */
+        max-width: 400px;
+        aspect-ratio: 1/1;
         overflow: hidden;
         background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
       }
-
       .modal-carousel-container .media-wrapper {
         width: 100%;
         height: 100%;
       }
-
       .modal-carousel-container img,
       .modal-carousel-container video {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* centraliza e mantém proporção */
-        background-color: white; /* fundo branco nas bordas */
+        object-fit: contain;
+        background-color: white;
       }
-
       .modal-carousel-container {
         position: relative;
         width: 100%;
-        height: auto; /* Altura automática para se ajustar ao conteúdo */
-        max-height: 60vh; /* Limite de altura para melhor aproveitamento da tela */
+        height: auto;
+        max-height: 60vh;
         overflow: hidden;
         background-color: white;
         display: flex;
@@ -96,9 +92,9 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.2);
         color: white;
-        padding: 8px 12px;
+        padding: 2px 10px;
         border-radius: 9999px;
         font-size: 2rem;
         line-height: 1;
@@ -107,14 +103,13 @@
         z-index: 5;
       }
       .carousel-btn.left {
-        left: 10px;
+        left: 2px;
       }
       .carousel-btn.right {
-        right: 10px;
+        right: 2px;
       }
-      /* Estilo para o modal (diálogo) */
       .modal {
-        display: none; /* Oculta por padrão */
+        display: none;
         position: fixed;
         z-index: 100;
         left: 0;
@@ -129,9 +124,9 @@
         background-color: #fefefe;
         padding: 20px;
         border-radius: 12px;
-        max-width: 95%; /* aproveita mais a largura */
+        max-width: 95%;
         max-height: 95%;
-        overflow-y: hidden; /* Evita a rolagem interna do modal */
+        overflow-y: hidden;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -145,11 +140,103 @@
         font-weight: bold;
         color: #555;
         cursor: pointer;
-        z-index: 10; /* Garante que o botão fique na frente */
+        z-index: 10;
       }
-      .menu-btn.active {
-        background-color: #3b82f6; /* azul */
+      .menu-btn {
+        background-color: #4b4b4b; /* cinza escuro */
+        color: #ddd; /* texto cinza claro */
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .menu-btn:hover {
+        background-color: #6b6b6b; /* um pouco mais claro ao passar o mouse */
+        color: #fff; /* texto branco ao passar */
+      }
+
+      .subcategory-btn {
+        background-color: #4b4b4b;
+        color: #ddd;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .subcategory-btn:hover {
+        background-color: #6b6b6b;
         color: #fff;
+      }
+
+      /* O seu estilo ativo já está ok, só mantenha */
+      .menu-btn.active {
+        background-color: #1a0272;
+        color: #fff;
+      }
+
+      .subcategory-btn.active {
+        background-color: #4810e2;
+        color: #fff;
+      }
+
+      #menu-container {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      #main-menu {
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+
+        justify-content: center; /* por padrão centralizado */
+        align-items: center;
+      }
+
+      /* No mobile, (menos de 768px por exemplo), alinha à esquerda para permitir scroll */
+      @media (max-width: 1280px) {
+        #main-menu {
+          justify-content: flex-start; /* itens iniciam na esquerda */
+        }
+      }
+
+      /* Esconde barras de rolagem */
+      #main-menu::-webkit-scrollbar {
+        display: none;
+      }
+      #main-menu {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      #submenu-container {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      #subcategory-container {
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+
+        justify-content: center; /* padrão centralizado no desktop */
+        align-items: center;
+      }
+
+      /* Em telas pequenas, alinhamento à esquerda para facilitar scroll */
+      @media (max-width: 1280px) {
+        #subcategory-container {
+          justify-content: flex-start;
+        }
+      }
+
+      /* Esconde scrollbars para aparência limpa */
+      #subcategory-container::-webkit-scrollbar {
+        display: none;
+      }
+      #subcategory-container {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
       }
     </style>
   </head>
@@ -160,7 +247,6 @@
         alt="Logo ARTESLIMAX"
         class="w-28 h-28 sm:w-32 sm:h-32 object-contain mr-3"
       />
-
       <div class="text-center">
         <h1
           class="dancing-script text-3xl sm:text-4xl md:text-6xl font-bold text-gray-800 leading-tight"
@@ -172,44 +258,30 @@
     </header>
 
     <!-- Menu de navegação -->
-    <nav class="flex flex-wrap justify-center space-x-2 md:space-x-4 mb-8">
-      <button
-        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
-        data-category="canecas"
+    <!-- Div pai com overflow oculto para esconder o scroll -->
+    <div id="menu-container" style="overflow-x: hidden; width: 100%">
+      <!-- Div filha que armazena os botões e que pode rolar -->
+      <nav
+        id="main-menu"
+        style="
+          display: flex;
+          gap: 0.5rem;
+          overflow-x: auto;
+          white-space: nowrap;
+          -webkit-overflow-scrolling: touch;
+        "
       >
-        Canecas
-      </button>
-      <button
-        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
-        data-category="camisas"
-      >
-        Camisas
-      </button>
-      <button
-        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
-        data-category="ecobag"
-      >
-        Ecobag
-      </button>
-      <button
-        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
-        data-category="mdf"
-      >
-        MDF
-      </button>
-      <button
-        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
-        data-category="quebra-cabecas"
-      >
-        Quebra-cabeças
-      </button>
-      <button
-        class="menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800"
-        data-category="outros"
-      >
-        Outros
-      </button>
-    </nav>
+        <!-- Botões do menu serão inseridos aqui -->
+      </nav>
+    </div>
+
+    <!-- Submenu dinâmico de subcategorias -->
+    <div id="submenu-container" style="overflow-x: hidden; width: 100%">
+      <nav
+        id="subcategory-container"
+        class="flex gap-2 overflow-x-auto whitespace-nowrap"
+      ></nav>
+    </div>
 
     <!-- Área do catálogo -->
     <main
@@ -217,226 +289,356 @@
       class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6"
     ></main>
 
-    <!-- Modal (Diálogo) para visualização do produto -->
+    <!-- Modal para visualização do produto -->
     <div id="product-modal" class="modal">
       <div class="modal-content text-center">
         <span class="modal-close-btn">&times;</span>
-        <div id="modal-content-container" class="flex flex-col h-full">
-          <!-- O conteúdo do produto será inserido aqui pelo JavaScript -->
-        </div>
+        <div id="modal-content-container" class="flex flex-col h-full"></div>
       </div>
     </div>
 
     <script>
-      let catalogoData = {};
-
-      async function carregarCatalogo() {
-        try {
-          const response = await fetch("data/data.json");
-          console.log(response);
-          catalogoData = await response.json();
-          renderProducts("canecas"); // renderiza só depois que o JSON chegou
-          const firstBtn = document.querySelector(
-            '.menu-btn[data-category="canecas"]'
-          );
-          if (firstBtn) firstBtn.classList.add("active");
-        } catch (error) {
-          console.error("Erro ao carregar catálogo:", error);
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", carregarCatalogo);
-
-      const catalogContainer = document.getElementById("catalog-container");
-      const menuButtons = document.querySelectorAll(".menu-btn");
-      const modal = document.getElementById("product-modal");
+      // Variáveis globais e referências a elementos DOM
+      let catalogoData = {}; // Dados do catálogo carregados do JSON
+      const catalogContainer = document.getElementById("catalog-container"); // Área onde os produtos serão exibidos
+      const subcategoryContainer = document.getElementById(
+        "subcategory-container"
+      ); // Container para submenu de subcategorias
+      const modal = document.getElementById("product-modal"); // Modal para mostrar detalhes do produto
       const modalContentContainer = document.getElementById(
         "modal-content-container"
-      );
-      const modalCloseBtn = document.querySelector(".modal-close-btn");
-      const whatsappNumber = "5575999593288";
-      let currentModalCarouselInterval = null;
-      let cardCarouselIntervals = [];
+      ); // Conteúdo do modal
+      const modalCloseBtn = document.querySelector(".modal-close-btn"); // Botão para fechar modal
+      const whatsappNumber = "5575999593288"; // Número para enviar pedidos via WhatsApp
+      let currentModalCarouselInterval = null; // Intervalo para carrossel no modal
+      let cardCarouselIntervals = []; // Array para armazenar intervalos dos carrosseis nos cards
 
-      // Função auxiliar para verificar se a URL é um vídeo
+      // Função que identifica se a URL da imagem é vídeo (extensões comuns)
       function isVideoUrl(url) {
         return url.match(/\.(mp4|webm|ogg|mov)$/i);
       }
 
-      // Função para gerar o HTML do carrossel para o card principal
+      // Gera o HTML do carrossel dentro do card do produto, com imagens/vídeos
       function createCardCarouselHTML(item, index) {
-        const carouselId = `card-carousel-${index}`;
-        let mediaHtml = item.imagens
-          .map((src, imgIndex) => {
-            if (isVideoUrl(src)) {
-              return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
-                imgIndex === 0 ? "active" : ""
-              }></video>`;
-            } else {
-              return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
-                item.titulo
-              }" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md ${
-                imgIndex === 0 ? "active" : ""
-              }">`;
-            }
-          })
-          .join("");
+        const carouselId = `card-carousel-${index}`; // Id único para cada carrossel
+        // Mapeia as imagens ou videos para tags HTML apropriadas
+        let mediaHtml = Array.isArray(item.imagens)
+          ? item.imagens
+              .map((src, imgIndex) => {
+                if (isVideoUrl(src)) {
+                  // Video com autoplay, loop e muted
+                  return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                    imgIndex === 0 ? "active" : ""
+                  }></video>`;
+                } else {
+                  // Imagem simples
+                  return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
+                    item.titulo
+                  }" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md ${
+                    imgIndex === 0 ? "active" : ""
+                  }">`;
+                }
+              })
+              .join("")
+          : "";
 
+        // Botões de navegação do carrossel (se houver mais de 1 imagem)
         let buttonsHtml = "";
-        if (item.imagens.length > 1) {
+        if (Array.isArray(item.imagens) && item.imagens.length > 1) {
           buttonsHtml = `
-                    <button class="carousel-btn left text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', -1);">&#10094;</button>
-                    <button class="carousel-btn right text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', 1);">&#10095;</button>
-                `;
+          <button class="carousel-btn left text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', -1);">&#10094;</button>
+          <button class="carousel-btn right text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', 1);">&#10095;</button>
+        `;
         }
 
+        // Retorna o HTML completo do carrossel para o card
         return `
-                <div id="${carouselId}" class="carousel-container relative overflow-hidden rounded-lg">
-                    <div class="media-wrapper">
-                        ${mediaHtml}
-                    </div>
-                    ${buttonsHtml}
-                </div>
-            `;
+      <div id="${carouselId}" class="carousel-container relative overflow-hidden rounded-lg">
+        <div class="media-wrapper">
+          ${mediaHtml}
+        </div>
+        ${buttonsHtml}
+      </div>
+    `;
       }
 
-      // Função para gerar o HTML do carrossel para o modal
+      // Gera o HTML do carrossel para o modal (detalhes do produto)
       function createModalCarouselHTML(item) {
         const carouselId = `modal-carousel`;
-        let mediaHtml = item.imagens
-          .map((src, imgIndex) => {
-            if (isVideoUrl(src)) {
-              return `<video src="${src}" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
-                imgIndex === 0 ? "active" : ""
-              }></video>`;
-            } else {
-              return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
-                item.titulo
-              }" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md ${
-                imgIndex === 0 ? "active" : ""
-              }">`;
-            }
-          })
-          .join("");
+        let mediaHtml = Array.isArray(item.imagens)
+          ? item.imagens
+              .map((src, imgIndex) => {
+                if (isVideoUrl(src)) {
+                  return `<video src="${src}" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                    imgIndex === 0 ? "active" : ""
+                  }></video>`;
+                } else {
+                  return `<img src="${src}" alt="Imagem ${imgIndex + 1} de ${
+                    item.titulo
+                  }" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md ${
+                    imgIndex === 0 ? "active" : ""
+                  }">`;
+                }
+              })
+              .join("")
+          : "";
 
         let buttonsHtml = "";
-        if (item.imagens.length > 1) {
+        if (Array.isArray(item.imagens) && item.imagens.length > 1) {
           buttonsHtml = `
-                    <button class="carousel-btn left" onclick="changeImage('${carouselId}', -1)">&#10094;</button>
-                    <button class="carousel-btn right" onclick="changeImage('${carouselId}', 1)">&#10095;</button>
-                `;
+          <button class="carousel-btn left" onclick="changeImage('${carouselId}', -1)">&#10094;</button>
+          <button class="carousel-btn right" onclick="changeImage('${carouselId}', 1)">&#10095;</button>
+        `;
         }
 
+        // Retorna conteúdo completo do modal, carrossel e informações do produto
         return `
-                <div id="${carouselId}" class="modal-carousel-container relative overflow-hidden mb-4">
-                    <div class="media-wrapper">
-                        ${mediaHtml}
-                    </div>
-                    ${buttonsHtml}
-                </div>
-                <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
-                <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
-                <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
-                <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
-            `;
+      <div id="${carouselId}" class="modal-carousel-container relative overflow-hidden mb-4">
+        <div class="media-wrapper">
+          ${mediaHtml}
+        </div>
+        ${buttonsHtml}
+      </div>
+      <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
+      <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
+      <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
+      <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+    `;
       }
 
-      // Função para renderizar os produtos na tela principal
-      function renderProducts(category) {
-        catalogContainer.innerHTML = "";
+      function autoScrollMenuBounce() {
+        const mainMenu = document.getElementById("main-menu");
+        if (!mainMenu) return;
 
-        const products = catalogoData[category];
-        if (!products) {
+        // Verifica se é dispositivo móvel (exemplo básico)
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        if (!isMobile) return;
+
+        // Se o scroll horizontal for possível
+        if (mainMenu.scrollWidth > mainMenu.clientWidth) {
+          // Scrolla suavemente para a direita em 100px e volta após 1 segundo
+          setTimeout(() => {
+            mainMenu.scrollBy({ left: 100, behavior: "smooth" });
+          }, 500);
+          setTimeout(() => {
+            mainMenu.scrollTo({ left: 0, behavior: "smooth" });
+          }, 1800);
+        }
+      }
+
+      // Chama a função após renderizar o menu
+      function afterMenuRendered() {
+        autoScrollMenuBounce();
+      }
+
+      // Modifique renderMainMenu para chamar afterMenuRendered após criação dos botões
+      function renderMainMenu() {
+        const mainMenu = document.getElementById("main-menu");
+        mainMenu.innerHTML = "";
+
+        Object.keys(catalogoData).forEach((category) => {
+          const display = category.charAt(0).toUpperCase() + category.slice(1);
+          const btn = document.createElement("button");
+          btn.className =
+            "menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 m-1 shadow-md transition-all hover:bg-gray-800";
+          btn.textContent = display;
+          btn.setAttribute("data-category", category);
+
+          btn.onclick = () => {
+            renderSubcategories(category);
+            renderProducts(category, "todos");
+
+            document
+              .querySelectorAll(".menu-btn")
+              .forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+          };
+
+          mainMenu.appendChild(btn);
+        });
+
+        afterMenuRendered(); // Chama aqui o efeito de scroll
+      }
+
+      function autoScrollSubmenuBounce() {
+        const submenu = document.getElementById("subcategory-container");
+        if (!submenu) return;
+
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+        if (!isMobile) return;
+
+        if (submenu.scrollWidth > submenu.clientWidth) {
+          // Scroll para a direita
+          setTimeout(() => {
+            submenu.scrollBy({ left: 100, behavior: "smooth" });
+          }, 500);
+
+          // Voltar após 1.3 segundos (tempo para o scroll completar)
+          setTimeout(() => {
+            submenu.scrollTo({ left: 0, behavior: "smooth" });
+          }, 1800);
+        }
+      }
+
+      // Gera o submenu das subcategorias para a categoria selecionada
+      function renderSubcategories(category) {
+        subcategoryContainer.innerHTML = ""; // Limpa submenu antigo
+
+        if (!catalogoData[category]) return;
+
+        const subcategories = Object.keys(catalogoData[category]); // Subcategorias presentes
+
+        // Botão "Todos" para exibir todos os produtos
+        subcategoryContainer.innerHTML += `
+    <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 m-1 rounded-full active" data-subcategory="todos">Todos</button>
+  `;
+
+        // Botões para cada subcategoria
+        subcategories.forEach((subcat) => {
+          const display = subcat.charAt(0).toUpperCase() + subcat.slice(1);
+          subcategoryContainer.innerHTML += `
+      <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 m-1 rounded-full" data-subcategory="${subcat}">${display}</button>
+    `;
+        });
+
+        // Selecione os botões apenas dentro do container atual para evitar conflitos
+        const buttons =
+          subcategoryContainer.querySelectorAll(".subcategory-btn");
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const subcat = btn.getAttribute("data-subcategory");
+            renderProducts(category, subcat);
+
+            // Remove 'active' somente dos botões dentro deste submenu e adiciona no clicado
+            buttons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+          });
+        });
+
+        autoScrollSubmenuBounce();
+      }
+
+      // Retorna lista dos produtos para categoria e subcategoria selecionadas
+      function getProducts(category, subcategory = "todos") {
+        if (!catalogoData[category]) return [];
+
+        if (subcategory === "todos") {
+          // Junta todos os produtos das subcategorias para "todos"
+          return Object.values(catalogoData[category]).flat();
+        }
+
+        // Retorna produtos específicos da subcategoria
+        return catalogoData[category][subcategory] || [];
+      }
+
+      // Renderiza os produtos na tela
+      function renderProducts(category, subcategory = "todos") {
+        const products = getProducts(category, subcategory);
+        catalogContainer.innerHTML = ""; // Limpa produtos antigos
+
+        if (products.length === 0) {
           catalogContainer.innerHTML =
-            '<p class="text-center text-lg col-span-full">Nenhum item encontrado nesta categoria.</p>';
+            '<p class="text-center text-lg col-span-full">Nenhum item encontrado.</p>';
           return;
         }
 
-        // Limpa os carrosseis anteriores
+        // Limpa intervalos dos carrosséis para evitar conflitos
         cardCarouselIntervals.forEach((interval) => clearInterval(interval));
         cardCarouselIntervals = [];
 
+        // Gera o HTML de cada produto
         products.forEach((item, index) => {
           const cardHtml = `
-                    <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform hover:scale-105">
-                        <div onclick="openModal(${index}, '${category}')" class="cursor-pointer">
-                            ${createCardCarouselHTML(item, index)}
-                            <h2 class="text-md font-semibold mt-2 text-center truncate">${
-                              item.titulo
-                            }</h2>
-                            <p class="text-lg font-bold text-green-600 text-center">R$ ${
-                              item.preco
-                            }</p>
-                        </div>
-                        <button onclick="encomendar('${item.titulo}', '${
-            item.preco
-          }', '${
+        <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform hover:scale-105">
+          <div onclick="openModal(${index}, '${category}', '${subcategory}')" class="cursor-pointer">
+            ${createCardCarouselHTML(item, index)}
+            <h2 class="text-md font-semibold mt-2 text-center truncate">${
+              item.titulo
+            }</h2>
+            <p class="text-lg font-bold text-green-600 text-center">R$ ${
+              item.preco
+            }</p>
+          </div>
+          <button onclick="encomendar('${item.titulo}', '${item.preco}', '${
             item.codigo
           }')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-1 px-2 rounded-full mt-2 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
-                    </div>
-                `;
+        </div>
+      `;
           catalogContainer.innerHTML += cardHtml;
         });
 
-        // Inicia o carrossel automático para cada card e os listeners de arrastar
-        startCardCarousels(category);
+        // Inicializa o carrossel de imagens para os cards
+        startCardCarousels(products);
+
+        // Adiciona suporte ao swipe/arrastar para os carrosséis
         products.forEach((item, index) => {
-          if (item.imagens.length > 1) {
+          if (Array.isArray(item.imagens) && item.imagens.length > 1) {
             handleSwipeAndDrag(`card-carousel-${index}`);
           }
         });
       }
 
-      // Função para iniciar os carrosséis dos cards
-      function startCardCarousels(category) {
+      // Inicia carrosséis automáticos para cada card com múltiplas imagens
+      function startCardCarousels(products) {
         const carousels = document.querySelectorAll(
           ".product-card .carousel-container"
         );
         carousels.forEach((carousel, index) => {
-          const item = catalogoData[category][index];
-          if (item && item.imagens.length > 1) {
+          const item = products[index];
+          if (item && Array.isArray(item.imagens) && item.imagens.length > 1) {
             const images = carousel.querySelectorAll(".carousel-item");
             let currentIndex = 0;
-
             const interval = setInterval(() => {
               images[currentIndex].classList.remove("active");
               currentIndex = (currentIndex + 1) % images.length;
               images[currentIndex].classList.add("active");
             }, 5000);
-
             cardCarouselIntervals.push(interval);
           }
         });
       }
 
-      // Função para abrir o modal com o item selecionado
-      window.openModal = function (itemIndex, category) {
-        const item = catalogoData[category][itemIndex];
-        modalContentContainer.innerHTML = createModalCarouselHTML(item);
-        modal.style.display = "flex"; // Exibe o modal
+      // Abre o modal com detalhes do produto selecionado
+      window.openModal = function (itemIndex, category, subcategory = "todos") {
+        let item;
+        if (subcategory === "todos") {
+          let products = [];
+          Object.values(catalogoData[category]).forEach((arr) => {
+            if (Array.isArray(arr)) products = products.concat(arr);
+          });
+          item = products[itemIndex];
+        } else {
+          item = Array.isArray(catalogoData[category][subcategory])
+            ? catalogoData[category][subcategory][itemIndex]
+            : null;
+        }
+        if (!item) return;
 
-        // Inicia o carrossel do modal
+        modalContentContainer.innerHTML = createModalCarouselHTML(item);
+        modal.style.display = "flex";
+
         const carousel = document.getElementById("modal-carousel");
-        if (carousel && item.imagens.length > 1) {
+        if (
+          carousel &&
+          Array.isArray(item.imagens) &&
+          item.imagens.length > 1
+        ) {
           const images = carousel.querySelectorAll(".carousel-item");
           let currentIndex = 0;
-          images[0].classList.add("active"); // Garante que a primeira imagem está ativa
-
-          if (currentModalCarouselInterval) {
+          images[0].classList.add("active");
+          if (currentModalCarouselInterval)
             clearInterval(currentModalCarouselInterval);
-          }
-
           currentModalCarouselInterval = setInterval(() => {
             images[currentIndex].classList.remove("active");
             currentIndex = (currentIndex + 1) % images.length;
             images[currentIndex].classList.add("active");
-          }, 5000); // 5 segundos
+          }, 5000);
 
           handleSwipeAndDrag(carousel.id);
         }
       };
 
-      // Função para fechar o modal
+      // Fecha o modal
       window.closeModal = function () {
         modal.style.display = "none";
         if (currentModalCarouselInterval) {
@@ -445,27 +647,26 @@
         }
       };
 
-      // Função para trocar a imagem do carrossel no modal manualmente
+      // Troca de imagem nos carrosséis manualmente
       window.changeImage = function (carouselId, direction) {
         const container = document.getElementById(carouselId);
         const images = container.querySelectorAll(".carousel-item");
         const currentActive = container.querySelector(".carousel-item.active");
+        if (!currentActive) return;
 
-        // Pausa o carrossel automático
-        if (carouselId.includes("card-carousel")) {
-          // Não é necessário parar o carrossel individual do card
-        } else if (currentModalCarouselInterval) {
+        if (
+          !carouselId.includes("card-carousel") &&
+          currentModalCarouselInterval
+        ) {
           clearInterval(currentModalCarouselInterval);
         }
 
         let currentIndex = Array.from(images).indexOf(currentActive);
         currentActive.classList.remove("active");
-
         let newIndex =
           (currentIndex + direction + images.length) % images.length;
         images[newIndex].classList.add("active");
 
-        // Reinicia o carrossel automático após a mudança manual
         if (carouselId.includes("modal-carousel") && images.length > 1) {
           currentModalCarouselInterval = setInterval(() => {
             window.changeImage(carouselId, 1);
@@ -473,7 +674,7 @@
         }
       };
 
-      // Função para o botão "Encomendar"
+      // Enviar pedido via WhatsApp com dados do produto
       window.encomendar = function (titulo, preco, codigo) {
         const message = `Olá! Gostaria de encomendar o item: ${titulo} (Código: ${codigo}, R$ ${preco}). Por favor, me passe mais detalhes sobre a personalização.`;
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -482,44 +683,32 @@
         window.open(whatsappLink, "_blank");
       };
 
-      // Função para adicionar funcionalidade de arrastar e passar
+      // Função para suportar swipe / arrastar no carrossel
       function handleSwipeAndDrag(carouselId) {
         const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+
         let isDragging = false;
         let startX = 0;
         let endX = 0;
 
         const startDrag = (e) => {
           isDragging = true;
-          if (e.type === "touchstart") {
-            startX = e.touches[0].clientX;
-          } else {
-            startX = e.clientX;
-          }
+          startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
           carousel.style.cursor = "grabbing";
         };
 
         const endDrag = (e) => {
           if (!isDragging) return;
           isDragging = false;
-
-          if (e.type === "touchend") {
-            endX = e.changedTouches[0].clientX;
-          } else {
-            endX = e.clientX;
-          }
-
+          endX =
+            e.type === "touchend" ? e.changedTouches[0].clientX : e.clientX;
           const diffX = startX - endX;
           const threshold = 50;
-
           if (Math.abs(diffX) > threshold) {
-            if (diffX > 0) {
-              // Swipe left
-              changeImage(carouselId, 1);
-            } else {
-              // Swipe right
-              changeImage(carouselId, -1);
-            }
+            diffX > 0
+              ? changeImage(carouselId, 1)
+              : changeImage(carouselId, -1);
           }
           carousel.style.cursor = "grab";
         };
@@ -529,43 +718,45 @@
           e.preventDefault();
         };
 
+        // Eventos para mouse e touch
         carousel.addEventListener("mousedown", startDrag);
         carousel.addEventListener("mouseup", endDrag);
-        carousel.addEventListener("mouseleave", endDrag); // Para evitar que a imagem trave se o mouse sair do elemento
+        carousel.addEventListener("mouseleave", endDrag);
         carousel.addEventListener("mousemove", drag);
-
         carousel.addEventListener("touchstart", startDrag, { passive: true });
         carousel.addEventListener("touchend", endDrag, { passive: true });
         carousel.addEventListener("touchmove", drag, { passive: false });
       }
 
-      // Adiciona event listeners para os botões do menu
-      menuButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const category = button.getAttribute("data-category");
-          renderProducts(category);
-
-          // Remove a classe active de todos os botões
-          menuButtons.forEach((btn) => btn.classList.remove("active"));
-          // Adiciona a classe active no botão clicado
-          button.classList.add("active");
-        });
+      // Eventos para fechar modal por clique no botão ou fora do conteúdo
+      modalCloseBtn.addEventListener("click", window.closeModal);
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) window.closeModal();
       });
 
-      // Adiciona event listener para o botão de fechar o modal
-      modalCloseBtn.addEventListener("click", closeModal);
+      // Carrega o JSON, gera o menu e exibe a primeira categoria e submenu
+      async function carregarCatalogo() {
+        try {
+          const response = await fetch("data/data.json");
+          catalogoData = await response.json();
 
-      // Fecha o modal ao clicar fora dele
-      window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-          closeModal();
+          renderMainMenu();
+
+          const firstCategory = Object.keys(catalogoData)[0];
+          renderSubcategories(firstCategory);
+          renderProducts(firstCategory, "todos");
+
+          const firstBtn = document.querySelector(
+            `.menu-btn[data-category="${firstCategory}"]`
+          );
+          if (firstBtn) firstBtn.classList.add("active");
+        } catch (error) {
+          console.error("Erro ao carregar catálogo:", error);
         }
-      });
+      }
 
-      // Carrega a primeira categoria ao carregar a página
-      /*  document.addEventListener("DOMContentLoaded", () => {
-        renderProducts("canecas");
-      }); */
+      // Inicializa tudo após o carregamento do DOM
+      document.addEventListener("DOMContentLoaded", carregarCatalogo);
     </script>
   </body>
 </html>
