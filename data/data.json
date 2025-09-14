@@ -251,30 +251,6 @@
         "imagens": ["canecas/NATAL/1MOCKUPS.jpg"]
       },
       {
-        "titulo": "Natal 02",
-        "codigo": "CAN041",
-        "preco": "25,00",
-        "imagens": ["canecas/NATAL/2MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Natal 03",
-        "codigo": "CAN042",
-        "preco": "25,00",
-        "imagens": ["canecas/NATAL/3MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Natal 04",
-        "codigo": "CAN043",
-        "preco": "25,00",
-        "imagens": ["canecas/NATAL/4MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Natal 06",
-        "codigo": "CAN045",
-        "preco": "25,00",
-        "imagens": ["canecas/NATAL/6MOCKUPS.jpg"]
-      },
-      {
         "titulo": "Natal 07",
         "codigo": "CAN046",
         "preco": "25,00",
@@ -321,12 +297,6 @@
         "codigo": "CAN053",
         "preco": "25,00",
         "imagens": ["canecas/NATAL/14MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Natal 15",
-        "codigo": "CAN054",
-        "preco": "25,00",
-        "imagens": ["canecas/NATAL/15MOCKUPS.jpg"]
       },
       {
         "titulo": "Natal 16",
@@ -635,57 +605,7 @@
         "imagens": ["canecas/NATAL/67MOCKUPS.jpg"]
       }
     ],
-    "kombi": [
-      {
-        "titulo": "Kombi 01",
-        "codigo": "CAN131",
-        "preco": "25,00",
-        "imagens": ["canecas/KOMBI/1MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Kombi 02",
-        "codigo": "CAN132",
-        "preco": "25,00",
-        "imagens": ["canecas/KOMBI/2MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Kombi 03",
-        "codigo": "CAN133",
-        "preco": "25,00",
-        "imagens": ["canecas/KOMBI/3MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Kombi 04",
-        "codigo": "CAN134",
-        "preco": "25,00",
-        "imagens": ["canecas/KOMBI/4MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Kombi 05",
-        "codigo": "CAN135",
-        "preco": "25,00",
-        "imagens": ["canecas/KOMBI/5MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Kombi 06",
-        "codigo": "CAN136",
-        "preco": "25,00",
-        "imagens": ["canecas/KOMBI/6MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Kombi 07",
-        "codigo": "CAN137",
-        "preco": "25,00",
-        "imagens": ["canecas/KOMBI/7MOCKUPS.jpg"]
-      }
-    ],
     "militar": [
-      {
-        "titulo": "Militar 01",
-        "codigo": "CAN138",
-        "preco": "25,00",
-        "imagens": ["canecas/MILITAR/1MOCKUPS.jpg"]
-      },
       {
         "titulo": "Militar 02",
         "codigo": "CAN139",
@@ -709,12 +629,6 @@
         "codigo": "CAN142",
         "preco": "25,00",
         "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"]
-      },
-      {
-        "titulo": "Militar 06",
-        "codigo": "CAN143",
-        "preco": "25,00",
-        "imagens": ["canecas/MILITAR/6MOCKUPS.jpg"]
       }
     ]
   },
