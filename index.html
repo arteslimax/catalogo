@@ -583,7 +583,7 @@
         const carousels = document.querySelectorAll(
           ".product-card .carousel-container"
         );
-
+        return;
         carousels.forEach((carousel, index) => {
           const item = products[index];
           if (item && Array.isArray(item.imagens) && item.imagens.length > 1) {
