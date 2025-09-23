@@ -630,6 +630,14 @@
         "preco": "25,00",
         "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"]
       }
+    ],
+    "Quadro MDF": [
+      {
+        "titulo": "Sua Arte",
+        "codigo": "MDF001",
+        "preco": "15,00",
+        "imagens": ["mdf/quadro-mdf.webp"]
+      }
     ]
   }
 }
