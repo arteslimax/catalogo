@@ -314,6 +314,21 @@
     </div>
 
     <script>
+      function isMobileView() {
+        return window.innerWidth <= 768; // exemplo, ajuste conforme sua definição
+      }
+
+      function getImagesForItem(item) {
+        if (
+          isMobileView() &&
+          item.imagensMobile &&
+          item.imagensMobile.length > 0
+        ) {
+          return item.imagensMobile;
+        }
+        return item.imagens || [];
+      }
+
       let catalogoData = {};
       const catalogContainer = document.getElementById("catalog-container");
       const subcategoryContainer = document.getElementById(
@@ -337,10 +352,13 @@
         return url.match(/\.(mp4|webm|ogg|mov)$/i);
       }
 
+      // Atualize as funções que criam o carrossel para usar getImagesForItem:
+
       function createCardCarouselHTML(item, index) {
         const carouselId = `card-carousel-${index}`;
-        let mediaHtml = Array.isArray(item.imagens)
-          ? item.imagens
+        const imagens = getImagesForItem(item);
+        let mediaHtml = Array.isArray(imagens)
+          ? imagens
               .map((src, imgIndex) => {
                 if (isVideoUrl(src)) {
                   return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
@@ -357,26 +375,27 @@
               .join("")
           : "";
         let buttonsHtml = "";
-        if (Array.isArray(item.imagens) && item.imagens.length > 1) {
+        if (Array.isArray(imagens) && imagens.length > 1) {
           buttonsHtml = `
-          <button class="carousel-btn left text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', -1);">&#10094;</button>
-          <button class="carousel-btn right text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', 1);">&#10095;</button>
-        `;
+    <button class="carousel-btn left text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', -1);">&#10094;</button>
+    <button class="carousel-btn right text-2xl" onclick="event.stopPropagation(); changeImage('${carouselId}', 1);">&#10095;</button>
+  `;
         }
         return `
-        <div id="${carouselId}" class="carousel-container relative overflow-hidden rounded-lg">
-          <div class="media-wrapper">
-            ${mediaHtml}
-          </div>
-          ${buttonsHtml}
-        </div>
-      `;
+  <div id="${carouselId}" class="carousel-container relative overflow-hidden rounded-lg">
+    <div class="media-wrapper">
+      ${mediaHtml}
+    </div>
+    ${buttonsHtml}
+  </div>
+  `;
       }
 
       function createModalCarouselHTML(item) {
         const carouselId = `modal-carousel`;
-        let mediaHtml = Array.isArray(item.imagens)
-          ? item.imagens
+        const imagens = getImagesForItem(item);
+        let mediaHtml = Array.isArray(imagens)
+          ? imagens
               .map((src, imgIndex) => {
                 if (isVideoUrl(src)) {
                   return `<video src="${src}" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
@@ -393,25 +412,33 @@
               .join("")
           : "";
         let buttonsHtml = "";
-        if (Array.isArray(item.imagens) && item.imagens.length > 1) {
+        if (Array.isArray(imagens) && imagens.length > 1) {
           buttonsHtml = `
-          <button class="carousel-btn left" onclick="changeImage('${carouselId}', -1)">&#10094;</button>
-          <button class="carousel-btn right" onclick="changeImage('${carouselId}', 1)">&#10095;</button>
-        `;
+    <button class="carousel-btn left" onclick="changeImage('${carouselId}', -1)">&#10094;</button>
+    <button class="carousel-btn right" onclick="changeImage('${carouselId}', 1)">&#10095;</button>
+  `;
         }
         return `
-        <div id="${carouselId}" class="modal-carousel-container relative overflow-hidden mb-4">
-          <div class="media-wrapper">
-            ${mediaHtml}
-          </div>
-          ${buttonsHtml}
-        </div>
-        <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
-        <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
-        <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
-        <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
-      `;
+  <div id="${carouselId}" class="modal-carousel-container relative overflow-hidden mb-4">
+    <div class="media-wrapper">
+      ${mediaHtml}
+    </div>
+    ${buttonsHtml}
+  </div>
+  <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
+  <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
+  <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
+  <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+  `;
       }
+
+      // Atualizar visualização ao redimensionar
+      window.addEventListener("resize", () => {
+        // Re-renderizar produtos atuais para atualizar imagens
+        if (currentCategory && currentSubcategory) {
+          renderProducts(currentCategory, currentSubcategory, currentPage);
+        }
+      });
 
       function autoScrollMenuBounce() {
         const mainMenu = document.getElementById("main-menu");

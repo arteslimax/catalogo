@@ -5,7 +5,8 @@
         "titulo": "Flork Torcedor 01",
         "codigo": "CAN001",
         "preco": "25,00",
-        "imagens": ["canecas/flork-brasil/FLORK01.jpg"]
+        "imagens": ["canecas/flork-brasil/FLORK01.jpg"],
+        "imagensMobile": ["canecas/flork-brasil/FLORK01_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 02",
@@ -14,31 +15,36 @@
         "imagens": [
           "canecas/flork-brasil/FLORK02.jpg",
           "canecas/flork-brasil/FLORK07.mp4"
-        ]
+        ],
+        "imagensMobile": ["canecas/flork-brasil/FLORK02_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 03",
         "codigo": "CAN003",
         "preco": "25,00",
-        "imagens": ["canecas/flork-brasil/FLORK03.jpg"]
+        "imagens": ["canecas/flork-brasil/FLORK03.jpg"],
+        "imagensMobile": ["canecas/flork-brasil/FLORK03_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 04",
         "codigo": "CAN004",
         "preco": "25,00",
-        "imagens": ["canecas/flork-brasil/FLORK04.jpg"]
+        "imagens": ["canecas/flork-brasil/FLORK04.jpg"],
+        "imagensMobile": ["canecas/flork-brasil/FLORK04_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 05",
         "codigo": "CAN005",
         "preco": "25,00",
-        "imagens": ["canecas/flork-brasil/FLORK05.jpg"]
+        "imagens": ["canecas/flork-brasil/FLORK05.jpg"],
+        "imagensMobile": ["canecas/flork-brasil/FLORK05_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 06",
         "codigo": "CAN006",
         "preco": "25,00",
-        "imagens": ["canecas/flork-brasil/FLORK06.jpg"]
+        "imagens": ["canecas/flork-brasil/FLORK06.jpg"],
+        "imagensMobile": ["canecas/flork-brasil/FLORK06_500px.jpg"]
       }
     ],
     "amizade": [
@@ -46,127 +52,148 @@
         "titulo": "Amizade 01",
         "codigo": "CAN007",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/1MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/1MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/1MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 02",
         "codigo": "CAN008",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/2MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/2MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/2MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 03",
         "codigo": "CAN009",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/3MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/3MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/3MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 04",
         "codigo": "CAN010",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/4MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/4MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/4MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 05",
         "codigo": "CAN011",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/5MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/5MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/5MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 06",
         "codigo": "CAN012",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/6MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/6MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/6MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 07",
         "codigo": "CAN013",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/7MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/7MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/7MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 08",
         "codigo": "CAN014",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/8MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/8MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/8MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 09",
         "codigo": "CAN015",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/9MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/9MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/9MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 10",
         "codigo": "CAN016",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/10MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/10MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/10MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 11",
         "codigo": "CAN017",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/11MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/11MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/11MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 12",
         "codigo": "CAN018",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/12MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/12MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/12MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 13",
         "codigo": "CAN019",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/13MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/13MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/13MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 14",
         "codigo": "CAN020",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/14MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/14MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/14MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 15",
         "codigo": "CAN021",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/15MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/15MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/15MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 16",
         "codigo": "CAN022",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/16MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/16MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/16MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 17",
         "codigo": "CAN023",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/17MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/17MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/17MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 18",
         "codigo": "CAN024",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/18MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/18MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/18MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 19",
         "codigo": "CAN025",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/19MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/19MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/19MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 20",
         "codigo": "CAN026",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/20MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/20MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/20MOCKUPS_500px.jpeg"]
       },
       {
         "titulo": "Amizade 21",
         "codigo": "CAN027",
         "preco": "25,00",
-        "imagens": ["canecas/AMIZADE/21MOCKUPS.webp"]
+        "imagens": ["canecas/AMIZADE/21MOCKUPS.webp"],
+        "imagensMobile": ["canecas/AMIZADE/21MOCKUPS_500px.jpeg"]
       }
     ],
     "aniversário": [
@@ -174,73 +201,85 @@
         "titulo": "Aniversário 01",
         "codigo": "CAN028",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/1MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/1MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/1MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 02 (adicione foto)",
         "codigo": "CAN029",
         "preco": "27,00",
-        "imagens": ["canecas/ANIVERSÁRIO/2MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/2MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/2MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 03",
         "codigo": "CAN030",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/3MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/3MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/3MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 04 (adicione foto)",
         "codigo": "CAN031",
         "preco": "27,00",
-        "imagens": ["canecas/ANIVERSÁRIO/4MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/4MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/4MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 05",
         "codigo": "CAN032",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/5MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/5MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/5MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 06 (adicione foto)",
         "codigo": "CAN033",
         "preco": "27,00",
-        "imagens": ["canecas/ANIVERSÁRIO/6MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/6MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/6MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 07",
         "codigo": "CAN034",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/7MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/7MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/7MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 08 (adicione foto)",
         "codigo": "CAN035",
         "preco": "27,00",
-        "imagens": ["canecas/ANIVERSÁRIO/8MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/8MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/8MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 09",
         "codigo": "CAN036",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/9MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/9MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/9MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 10",
         "codigo": "CAN037",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/10MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/10MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/10MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 11",
         "codigo": "CAN038",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/11MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/11MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/11MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Aniversário 12",
         "codigo": "CAN039",
         "preco": "25,00",
-        "imagens": ["canecas/ANIVERSÁRIO/12MOCKUPS.jpg"]
+        "imagens": ["canecas/ANIVERSÁRIO/12MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/12MOCKUPS_500px.jpg"]
       }
     ],
     "natal": [
@@ -248,361 +287,421 @@
         "titulo": "Natal 01",
         "codigo": "CAN040",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/1MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/1MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/1MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 07",
         "codigo": "CAN046",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/7MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/7MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/7MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 08",
         "codigo": "CAN047",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/8MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/8MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/8MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 09",
         "codigo": "CAN048",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/9MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/9MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/9MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 10",
         "codigo": "CAN049",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/10MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/10MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/10MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 11",
         "codigo": "CAN050",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/11MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/11MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/11MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 12",
         "codigo": "CAN051",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/12MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/12MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/12MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 13",
         "codigo": "CAN052",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/13MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/13MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/13MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 14",
         "codigo": "CAN053",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/14MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/14MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/14MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 16",
         "codigo": "CAN055",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/16MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/16MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/16MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 17",
         "codigo": "CAN056",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/17MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/17MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/17MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 18",
         "codigo": "CAN057",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/18MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/18MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/18MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 19",
         "codigo": "CAN058",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/19MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/19MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/19MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 20",
         "codigo": "CAN059",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/20MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/20MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/20MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 21",
         "codigo": "CAN060",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/21MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/21MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/21MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 22",
         "codigo": "CAN061",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/22MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/22MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/22MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 23",
         "codigo": "CAN062",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/23MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/23MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/23MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 24",
         "codigo": "CAN063",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/24MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/24MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/24MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 25",
         "codigo": "CAN064",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/25MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/25MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/25MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 26",
         "codigo": "CAN065",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/26MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/26MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/26MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 27",
         "codigo": "CAN066",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/27MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/27MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/27MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 28",
         "codigo": "CAN067",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/28MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/28MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/28MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 29",
         "codigo": "CAN068",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/29MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/29MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/29MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 30",
         "codigo": "CAN069",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/30MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/30MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/30MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 31",
         "codigo": "CAN070",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/31MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/31MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/31MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 32",
         "codigo": "CAN071",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/32MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/32MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/32MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 33",
         "codigo": "CAN072",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/33MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/33MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/33MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 34",
         "codigo": "CAN073",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/34MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/34MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/34MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 35",
         "codigo": "CAN074",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/35MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/35MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/35MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 36",
         "codigo": "CAN075",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/36MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/36MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/36MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 37",
         "codigo": "CAN076",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/37MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/37MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/37MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 38",
         "codigo": "CAN077",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/38MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/38MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/38MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 39",
         "codigo": "CAN078",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/39MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/39MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/39MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 41",
         "codigo": "CAN080",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/41MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/41MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/41MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 42",
         "codigo": "CAN081",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/42MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/42MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/42MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 43",
         "codigo": "CAN082",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/43MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/43MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/43MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 44",
         "codigo": "CAN083",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/44MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/44MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/44MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 45",
         "codigo": "CAN084",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/45MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/45MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/45MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 46",
         "codigo": "CAN085",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/46MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/46MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/46MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 47",
         "codigo": "CAN086",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/47MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/47MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/47MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 48",
         "codigo": "CAN087",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/48MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/48MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/48MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 49",
         "codigo": "CAN088",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/49MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/49MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/49MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 50",
         "codigo": "CAN089",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/50MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/50MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/50MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 51",
         "codigo": "CAN090",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/51MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/51MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/51MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 52",
         "codigo": "CAN091",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/52MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/52MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/52MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 53",
         "codigo": "CAN092",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/53MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/53MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/53MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 54",
         "codigo": "CAN093",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/54MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/54MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/54MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 55",
         "codigo": "CAN094",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/55MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/55MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/55MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 56",
         "codigo": "CAN095",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/56MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/56MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/56MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 57",
         "codigo": "CAN096",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/57MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/57MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/57MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 58",
         "codigo": "CAN097",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/58MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/58MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/58MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 59",
         "codigo": "CAN098",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/59MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/59MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/59MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 60",
         "codigo": "CAN099",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/60MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/60MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/60MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 61",
         "codigo": "CAN100",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/61MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/61MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/61MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 62",
         "codigo": "CAN101",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/62MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/62MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/62MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 63",
         "codigo": "CAN102",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/63MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/63MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/63MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 64",
         "codigo": "CAN103",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/64MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/64MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/64MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 65",
         "codigo": "CAN104",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/65MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/65MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/65MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 66",
         "codigo": "CAN105",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/66MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/66MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/66MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Natal 67",
         "codigo": "CAN107",
         "preco": "25,00",
-        "imagens": ["canecas/NATAL/67MOCKUPS.jpg"]
+        "imagens": ["canecas/NATAL/67MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/NATAL/67MOCKUPS_500px.jpg"]
       }
     ],
     "militar": [
@@ -630,8 +729,10 @@
         "preco": "25,00",
         "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"]
       }
-    ],
-    "Quadro MDF": [
+    ]
+  },
+  "Quadro MDF": {
+    "Comum": [
       {
         "titulo": "Placa MDF 30x20cm",
         "codigo": "MDF001",
