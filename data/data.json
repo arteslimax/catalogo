@@ -709,25 +709,29 @@
         "titulo": "Militar 02",
         "codigo": "CAN139",
         "preco": "25,00",
-        "imagens": ["canecas/MILITAR/2MOCKUPS.jpg"]
+        "imagens": ["canecas/MILITAR/2MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/MILITAR/2MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Militar 03",
         "codigo": "CAN140",
         "preco": "25,00",
-        "imagens": ["canecas/MILITAR/3MOCKUPS.jpg"]
+        "imagens": ["canecas/MILITAR/3MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/MILITAR/3MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Militar 04",
         "codigo": "CAN141",
         "preco": "25,00",
-        "imagens": ["canecas/MILITAR/4MOCKUPS.jpg"]
+        "imagens": ["canecas/MILITAR/4MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/MILITAR/4MOCKUPS_500px.jpg"]
       },
       {
         "titulo": "Militar 05",
         "codigo": "CAN142",
         "preco": "25,00",
-        "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"]
+        "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"],
+        "imagensMobile": ["canecas/MILITAR/5MOCKUPS_500px.jpg"]
       }
     ]
   },
