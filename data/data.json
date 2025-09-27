@@ -731,6 +731,16 @@
       }
     ]
   },
+  "Quebra Cabeça": {
+    "90 peças": [
+      {
+        "titulo": "90 peças - A4 - 21x29,7cm",
+        "codigo": "QC001",
+        "preco": "15,00",
+        "imagens": ["quebra_cabeca/qc001.webp", "quebra_cabeca/qc002.webp"]
+      }
+    ]
+  },
   "Quadro MDF": {
     "Comum": [
       {
