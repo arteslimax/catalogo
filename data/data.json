@@ -818,9 +818,15 @@
   "Quebra Cabeça": {
     "90 peças": [
       {
-        "titulo": "90 peças - A4 - 21x29,7cm",
+        "titulo": "90 peças - A4 - 21x29,7cm (SUA ARTE)",
         "codigo": "QC001",
-        "preco": "15,00",
+        "preco": "13,00",
+        "imagens": ["quebra_cabeca/qc001.webp", "quebra_cabeca/qc002.webp"]
+      },
+      {
+        "titulo": "90 peças - A4 - 21x29,7cm (NOSSA ARTE)",
+        "codigo": "QC002",
+        "preco": "18,00",
         "imagens": ["quebra_cabeca/qc001.webp", "quebra_cabeca/qc002.webp"]
       }
     ]
