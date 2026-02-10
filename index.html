@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -57,13 +57,14 @@
       .modal-carousel-container {
         position: relative;
         width: 100%;
-        max-width: 400px;
+        max-width: 500px;
         aspect-ratio: 1/1;
         overflow: hidden;
         background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 auto; /* Center the container */
       }
       .modal-carousel-container .media-wrapper {
         width: 100%;
@@ -76,17 +77,7 @@
         object-fit: contain;
         background-color: white;
       }
-      .modal-carousel-container {
-        position: relative;
-        width: 100%;
-        height: auto;
-        max-height: 60vh;
-        overflow: hidden;
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+      /* Removed duplicate .modal-carousel-container definition */
       .carousel-btn {
         position: absolute;
         top: 50%;
@@ -125,11 +116,11 @@
         border-radius: 12px;
         max-width: 95%;
         max-height: 95%;
-        overflow-y: hidden;
+        overflow-y: auto;
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-start;
       }
       .modal-close-btn {
         position: absolute;
@@ -144,7 +135,9 @@
       .menu-btn {
         background-color: #4b4b4b;
         color: #ddd;
-        transition: background-color 0.3s, color 0.3s;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
       }
       .menu-btn:hover {
         background-color: #6b6b6b;
@@ -153,7 +146,9 @@
       .subcategory-btn {
         background-color: #4b4b4b;
         color: #ddd;
-        transition: background-color 0.3s, color 0.3s;
+        transition:
+          background-color 0.3s,
+          color 0.3s;
       }
       .subcategory-btn:hover {
         background-color: #6b6b6b;
@@ -332,11 +327,11 @@
       let catalogoData = {};
       const catalogContainer = document.getElementById("catalog-container");
       const subcategoryContainer = document.getElementById(
-        "subcategory-container"
+        "subcategory-container",
       );
       const modal = document.getElementById("product-modal");
       const modalContentContainer = document.getElementById(
-        "modal-content-container"
+        "modal-content-container",
       );
       const modalCloseBtn = document.querySelector(".modal-close-btn");
       const whatsappNumber = "5575999593288";
@@ -361,7 +356,7 @@
           ? imagens
               .map((src, imgIndex) => {
                 if (isVideoUrl(src)) {
-                  return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                  return `<video src="${src}" class="carousel-item card-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline onloadeddata="this.play()" ${
                     imgIndex === 0 ? "active" : ""
                   }></video>`;
                 } else {
@@ -398,7 +393,7 @@
           ? imagens
               .map((src, imgIndex) => {
                 if (isVideoUrl(src)) {
-                  return `<video src="${src}" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline ${
+                  return `<video src="${src}" class="carousel-item modal-carousel-media w-full h-full rounded-lg shadow-md" autoplay loop muted playsinline onloadeddata="this.play()" ${
                     imgIndex === 0 ? "active" : ""
                   }></video>`;
                 } else {
@@ -425,7 +420,7 @@
     </div>
     ${buttonsHtml}
   </div>
-  <h2 class="text-3xl font-semibold mt-4 text-center">${item.titulo}</h2>
+  <h2 class="text-xl sm:text-2xl font-semibold mt-4 text-center">${item.titulo}</h2>
   <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
   <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
   <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
@@ -550,31 +545,39 @@
             '<p class="text-center text-lg col-span-full">Nenhum item encontrado.</p>';
           return;
         }
-
         const start = (page - 1) * rowsPerPage;
         const end = start + rowsPerPage;
         const pagedProducts = products.slice(start, end);
 
+        let allCardsHtml = "";
         pagedProducts.forEach((item, index) => {
           const cardHtml = `
-          <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform">
+          <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform h-full flex flex-col justify-between">
             <div onclick="openModal(${
               index + start
-            }, '${category}', '${subcategory}')" class="cursor-pointer">
+            }, '${category}', '${subcategory}')" class="cursor-pointer flex-grow flex flex-col">
               ${createCardCarouselHTML(item, index + start)}
-              <h2 class="text-md font-semibold mt-2 text-center truncate">${
+              <h2 class="text-md font-semibold mt-2 text-center line-clamp-2 leading-tight overflow-hidden">${
                 item.titulo
               }</h2>
-              <p class="text-lg font-bold text-green-600 text-center">R$ ${
+              <p class="text-lg font-bold text-green-600 text-center mt-auto">R$ ${
                 item.preco
               }</p>
             </div>
             <button onclick="encomendar('${item.titulo}', '${item.preco}', '${
-            item.codigo
-          }')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-1 px-2 rounded-full mt-2 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+              item.codigo
+            }')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-1 px-2 rounded-full mt-2 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
           </div>
         `;
-          catalogContainer.innerHTML += cardHtml;
+          allCardsHtml += cardHtml;
+        });
+        catalogContainer.innerHTML = allCardsHtml;
+
+        // Force play videos in the grid
+        const videos = catalogContainer.querySelectorAll("video");
+        videos.forEach((v) => {
+          v.muted = true;
+          v.play().catch((e) => console.log("Grid video autoplay failed:", e));
         });
 
         // Limpa e inicializa swipe/carrossel se necessário
@@ -648,6 +651,13 @@
         modalContentContainer.innerHTML = createModalCarouselHTML(item);
         modal.style.display = "flex";
 
+        // Force play videos in the modal
+        const videos = modalContentContainer.querySelectorAll("video");
+        videos.forEach((v) => {
+          v.muted = true;
+          v.play().catch((e) => console.log("Modal video autoplay failed:", e));
+        });
+
         const carousel = document.getElementById("modal-carousel");
         if (
           carousel &&
@@ -677,6 +687,11 @@
         const currentActive = container.querySelector(".carousel-item.active");
         if (!currentActive) return;
 
+        // Pause current video if applicable
+        if (currentActive.tagName === "VIDEO") {
+          currentActive.pause();
+        }
+
         if (
           !carouselId.includes("card-carousel") &&
           currentModalCarouselInterval
@@ -689,12 +704,22 @@
         let newIndex =
           (currentIndex + direction + images.length) % images.length;
         images[newIndex].classList.add("active");
+
+        // Play new video if applicable
+        const newActive = images[newIndex];
+        if (newActive.tagName === "VIDEO") {
+          newActive.muted = true;
+          newActive.currentTime = 0;
+          newActive
+            .play()
+            .catch((e) => console.log("Carousel video play failed:", e));
+        }
       };
 
       window.encomendar = function (titulo, preco, codigo) {
         const message = `Olá! Gostaria de encomendar o item: ${titulo} (Código: ${codigo}, R$ ${preco}). Por favor, me passe mais detalhes sobre a personalização.`;
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-          message
+          message,
         )}`;
         window.open(whatsappLink, "_blank");
       };
@@ -759,7 +784,7 @@
           renderProducts(firstCategory, "todos", currentPage);
           updatePaginationControls(firstCategory, "todos");
           const firstBtn = document.querySelector(
-            `.menu-btn[data-category="${firstCategory}"]`
+            `.menu-btn[data-category="${firstCategory}"]`,
           );
           if (firstBtn) firstBtn.classList.add("active");
         } catch (error) {
