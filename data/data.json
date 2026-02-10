@@ -199,83 +199,163 @@
     "aniversário": [
       {
         "titulo": "Aniversário 01",
+        "codigo": "CAN142",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO1.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO1_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 02",
+        "codigo": "CAN143",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO2.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO2_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 03",
+        "codigo": "CAN144",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO3.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO3_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 04",
+        "codigo": "CAN145",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO4.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO4_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 05 (até 3 fotos)",
+        "codigo": "CAN146",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO5.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO5_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 06",
+        "codigo": "CAN147",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO6.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO6_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 07",
+        "codigo": "CAN148",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO7.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO7_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 08",
+        "codigo": "CAN149",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO8.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO8_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 09",
+        "codigo": "CAN150",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO9.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO9_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 10",
+        "codigo": "CAN151",
+        "preco": "25,00",
+        "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO10.jpg"],
+        "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO10_500px.jpg"],
+        "isNoveltyValidUntil": "2026-03-31"
+      },
+      {
+        "titulo": "Aniversário 11",
         "codigo": "CAN028",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/1MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/1MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 02 (adicione foto)",
+        "titulo": "Aniversário 12 (adicione foto)",
         "codigo": "CAN029",
         "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/2MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/2MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 03",
+        "titulo": "Aniversário 13",
         "codigo": "CAN030",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/3MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/3MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 04 (adicione foto)",
+        "titulo": "Aniversário 14 (adicione foto)",
         "codigo": "CAN031",
         "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/4MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/4MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 05",
+        "titulo": "Aniversário 15",
         "codigo": "CAN032",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/5MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/5MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 06 (adicione foto)",
+        "titulo": "Aniversário 16 (adicione foto)",
         "codigo": "CAN033",
         "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/6MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/6MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 07",
+        "titulo": "Aniversário 17",
         "codigo": "CAN034",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/7MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/7MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 08 (adicione foto)",
+        "titulo": "Aniversário 18 (adicione foto)", 
         "codigo": "CAN035",
         "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/8MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/8MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 09",
+        "titulo": "Aniversário 19",
         "codigo": "CAN036",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/9MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/9MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 10",
+        "titulo": "Aniversário 20",
         "codigo": "CAN037",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/10MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/10MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 11",
+        "titulo": "Aniversário 21",
         "codigo": "CAN038",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/11MOCKUPS.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/11MOCKUPS_500px.jpg"]
       },
       {
-        "titulo": "Aniversário 12",
+        "titulo": "Aniversário 22",
         "codigo": "CAN039",
         "preco": "25,00",
         "imagens": ["canecas/ANIVERSÁRIO/12MOCKUPS.jpg"],
@@ -748,10 +828,16 @@
   "Quadro MDF": {
     "Comum": [
       {
-        "titulo": "Placa MDF 30x20cm",
+        "titulo": "Placa MDF 30x20cm (SUA ARTE)",
         "codigo": "MDF001",
-        "preco": "15,00",
+        "preco": "10,00",
         "imagens": ["mdf/quadro-mdf.webp"]
+      },
+      {
+        "titulo": "Placa MDF 30x20cm (NOSSA ARTE)",
+        "codigo": "MDF002",
+        "preco": "15,00",
+        "imagens": ["mdf/transformers.mp4"]
       }
     ]
   }
