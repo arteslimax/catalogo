@@ -536,8 +536,22 @@
         return catalogoData[category][subcategory] || [];
       }
 
+      function getSortedProducts(category, subcategory = "todos") {
+        let products = getProducts(category, subcategory);
+        // Sort: items with isNoveltyValidUntil first, then by date descending (farthest to nearest)
+        return [...products].sort((a, b) => {
+          const dateA = a.isNoveltyValidUntil || "";
+          const dateB = b.isNoveltyValidUntil || "";
+          if (dateA && !dateB) return -1;
+          if (!dateA && dateB) return 1;
+          if (dateA && dateB) return dateB.localeCompare(dateA);
+          return 0;
+        });
+      }
+
       function renderProducts(category, subcategory = "todos", page = 1) {
-        const products = getProducts(category, subcategory);
+        const products = getSortedProducts(category, subcategory);
+
         catalogContainer.innerHTML = "";
 
         if (products.length === 0) {
@@ -549,10 +563,18 @@
         const end = start + rowsPerPage;
         const pagedProducts = products.slice(start, end);
 
+        const today = new Date().toISOString().split("T")[0];
         let allCardsHtml = "";
         pagedProducts.forEach((item, index) => {
+          const isNew =
+            item.isNoveltyValidUntil && item.isNoveltyValidUntil >= today;
+          const badgeHtml = isNew
+            ? `<div class="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-bl-lg rounded-tr-lg z-10 shadow-md">Novo</div>`
+            : "";
+
           const cardHtml = `
-          <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform h-full flex flex-col justify-between">
+          <div class="product-card bg-white rounded-xl shadow-lg p-3 transform transition-transform h-full flex flex-col justify-between relative">
+            ${badgeHtml}
             <div onclick="openModal(${
               index + start
             }, '${category}', '${subcategory}')" class="cursor-pointer flex-grow flex flex-col">
@@ -591,7 +613,7 @@
       }
 
       function updatePaginationControls(category, subcategory = "todos") {
-        const products = getProducts(category, subcategory);
+        const products = getSortedProducts(category, subcategory);
         const totalPages = Math.ceil(products.length / rowsPerPage);
         const container = document.getElementById("pagination-controls");
         container.innerHTML = "";
@@ -599,10 +621,10 @@
         if (totalPages <= 1) return;
 
         const prevBtn = document.createElement("button");
-        prevBtn.textContent = "‹ Página Anterior"; // caractere de seta para esquerda, pode usar '<' mas esse é mais bonito
+        prevBtn.textContent = "‹ Página Anterior";
         prevBtn.disabled = currentPage === 1;
         prevBtn.className =
-          "bg-green-200 rounded px-2 py-1 text-lg disabled:opacity-50";
+          "bg-green-200 rounded px-1 py-1 text-lg disabled:opacity-50";
         prevBtn.onclick = () => {
           if (currentPage > 1) {
             currentPage--;
@@ -619,7 +641,7 @@
         nextBtn.textContent = "Próxima Página ›"; // caractere de seta para direita
         nextBtn.disabled = currentPage === totalPages;
         nextBtn.className =
-          "bg-green-200 rounded px-2 py-1 text-lg disabled:opacity-50";
+          "bg-green-200 rounded px-1 py-1 text-lg disabled:opacity-50";
         nextBtn.onclick = () => {
           if (currentPage < totalPages) {
             currentPage++;
@@ -634,18 +656,9 @@
       }
 
       window.openModal = function (itemIndex, category, subcategory = "todos") {
-        let item;
-        if (subcategory === "todos") {
-          let products = [];
-          Object.values(catalogoData[category]).forEach((arr) => {
-            if (Array.isArray(arr)) products = products.concat(arr);
-          });
-          item = products[itemIndex];
-        } else {
-          item = Array.isArray(catalogoData[category][subcategory])
-            ? catalogoData[category][subcategory][itemIndex]
-            : null;
-        }
+        const products = getSortedProducts(category, subcategory);
+        const item = products[itemIndex];
+
         if (!item) return;
 
         modalContentContainer.innerHTML = createModalCarouselHTML(item);
