@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="favicon-256.ico" />
@@ -25,6 +25,9 @@
       }
       .dancing-script {
         font-family: "Dancing Script", cursive;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
       }
       .carousel-item {
         display: none;
@@ -191,7 +194,7 @@
         -ms-overflow-style: none;
         margin-top: 10px;
       }
-      @media (max-width: 1280px) {
+      @media (max-width: 600px) {
         #main-menu {
           justify-content: flex-start;
         }
@@ -208,7 +211,7 @@
         justify-content: center;
         align-items: center;
       }
-      @media (max-width: 1280px) {
+      @media (max-width: 600px) {
         #subcategory-container {
           justify-content: flex-start;
         }
@@ -240,6 +243,11 @@
         padding: 0.2rem 0;
         border-bottom: 1px solid #ccc;
       }
+      @media (max-width: 600px) {
+        #pagination-controls {
+          justify-content: flex-start;
+        }
+      }
       #pagination-controls button {
         background-color: #6b6b6b;
         color: white;
@@ -259,19 +267,21 @@
     </style>
   </head>
   <body class="p-4 md:p-8">
-    <header class="flex items-center justify-center mb-4 px-4">
+    <header class="flex items-center justify-center mb-2 px-2">
       <img
         srcset="logo.png"
         alt="Logo ARTESLIMAX"
-        class="w-28 h-28 sm:w-32 sm:h-32 object-contain mr-3"
+        class="w-24 h-24 sm:w-24 sm:h-24 object-contain mr-3"
       />
       <div class="text-center">
         <h1
-          class="dancing-script text-3xl sm:text-4xl md:text-6xl font-bold text-gray-800 leading-tight"
+          class="font-montserrat text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 leading-tight"
         >
           ARTESLIMAX Personalização
         </h1>
-        <p class="text-base sm:text-lg md:text-xl lg:text-2xl mt-1">Catálogo</p>
+        <p class="text-base sm:text-lg md:text-xl lg:text-2xl mt-1">
+          <strong class="font-montserrat">Catálogo</strong>
+        </p>
       </div>
     </header>
 
