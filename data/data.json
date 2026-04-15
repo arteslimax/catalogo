@@ -198,65 +198,65 @@
     ],
     "aniversário": [
       {
-        "titulo": "Aniversário 01",
+        "titulo": "Aniversário 01 (adiciona foto)",
         "codigo": "CAN142",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO1.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO1_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
       },
       {
-        "titulo": "Aniversário 02",
+        "titulo": "Aniversário 02 (adiciona foto)",
         "codigo": "CAN143",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO2.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO2_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
       },
       {
-        "titulo": "Aniversário 03",
+        "titulo": "Aniversário 03 (adiciona foto)",
         "codigo": "CAN144",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO3.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO3_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
       },
       {
-        "titulo": "Aniversário 04",
+        "titulo": "Aniversário 04 (adiciona foto)",
         "codigo": "CAN145",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO4.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO4_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
       },
       {
-        "titulo": "Aniversário 05 (até 3 fotos)",
+        "titulo": "Aniversário 05 (adiciona até 3 fotos)",
         "codigo": "CAN146",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO5.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO5_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
       },
       {
-        "titulo": "Aniversário 06",
+        "titulo": "Aniversário 06 (adiciona foto)",
         "codigo": "CAN147",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO6.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO6_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
       },
       {
-        "titulo": "Aniversário 07",
+        "titulo": "Aniversário 07 (adiciona foto)",
         "codigo": "CAN148",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO7.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO7_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
       },
       {
-        "titulo": "Aniversário 08",
+        "titulo": "Aniversário 08 (adiciona foto)",
         "codigo": "CAN149",
-        "preco": "25,00",
+        "preco": "27,00",
         "imagens": ["canecas/ANIVERSÁRIO/ANIVERSARIO8.jpg"],
         "imagensMobile": ["canecas/ANIVERSÁRIO/ANIVERSARIO8_500px.jpg"],
         "isNoveltyValidUntil": "2026-03-31"
@@ -821,7 +821,7 @@
         "titulo": "90 peças - A4 - 21x29,7cm (SUA ARTE)",
         "codigo": "QC001",
         "preco": "13,00",
-        "imagens": ["quebra_cabeca/qc001.webp", "quebra_cabeca/qc002.webp"]
+        "imagens": ["quebra_cabeca/example01.jpg"]
       },
       {
         "titulo": "90 peças - A4 - 21x29,7cm (NOSSA ARTE)",
@@ -832,18 +832,63 @@
     ]
   },
   "Quadro MDF": {
-    "Comum": [
+    "3mm 30x20cm": [
       {
-        "titulo": "Placa MDF 30x20cm (SUA ARTE)",
+        "titulo": "Placa MDF (SUA ARTE)",
         "codigo": "MDF001",
         "preco": "10,00",
-        "imagens": ["mdf/quadro-mdf.webp"]
+        "imagens": ["mdf/example1.jpg","mdf/quadro-mdf.webp"],
+        "isNoveltyValidUntil": "2026-05-31"
       },
       {
-        "titulo": "Placa MDF 30x20cm (NOSSA ARTE)",
+        "titulo": "Placa MDF (NOSSA ARTE)",
         "codigo": "MDF002",
         "preco": "15,00",
-        "imagens": ["mdf/transformers.mp4"]
+        "imagens": ["mdf/example2.jpg", "mdf/quadro-mdf.webp"],
+        "isNoveltyValidUntil": "2026-05-31"
+      }
+    ]
+  },
+  "Mouse Pad": {
+    "21x15cm": [
+      {
+        "titulo": "Mouse Pad Com Sua arte",
+        "codigo": "MP001",
+        "preco": "10,00",
+        "imagens": ["mouse-pad/example1.jpg", "mouse-pad/example2.jpg"],
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Mouse Pad Com Nossa arte",
+        "codigo": "MP002",
+        "preco": "15,00",
+        "imagens": ["mouse-pad/example3.webp"],
+        "isNoveltyValidUntil": "2026-05-31"
+      }
+    ]
+  },
+  "Porta Copo": {
+    "2mm 8x8cm": [
+      {
+        "titulo": "Porta Copo",
+        "codigo": "PC001",
+        "preco": "3,00",
+        "imagens": ["porta-copo/example1.jpg"],
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Porta Copo Com Sua arte",
+        "codigo": "PC002",
+        "preco": "5,00",
+        "imagens": ["porta-copo/example3.webp"],
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Porta Copo Com Nossa arte",
+        "codigo": "PC003",
+        "preco": "8,00",
+        "imagens": ["porta-copo/example2.jpg"],
+        "isNoveltyValidUntil": "2026-05-31"
       }
     ]
   }
