@@ -813,6 +813,48 @@
         "imagens": ["canecas/MILITAR/5MOCKUPS.jpg"],
         "imagensMobile": ["canecas/MILITAR/5MOCKUPS_500px.jpg"]
       }
+    ],
+    "Dias das mães": [
+      {
+        "titulo": "Dia das Mães 01 (adicione foto)",
+        "codigo": "CAN143",
+        "preco": "27,00",
+        "imagens": ["canecas/MAES/0001.jpg"],
+        "imagensMobile": ["canecas/MAES/0001_500px.jpg"],
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 02 (adicione foto)",
+        "codigo": "CAN144",
+        "preco": "27,00",
+        "imagens": ["canecas/MAES/0002.jpg"],
+        "imagensMobile": ["canecas/MAES/0002_500px.jpg"],
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 03 (adicione foto)",
+        "codigo": "CAN145",
+        "preco": "27,00",
+        "imagens": ["canecas/MAES/0003.jpg"],
+        "imagensMobile": ["canecas/MAES/0003_500px.jpg"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 04 (adicione foto)",
+        "codigo": "CAN146",
+        "preco": "27,00",
+        "imagens": ["canecas/MAES/0004.jpg"],
+        "imagensMobile": ["canecas/MAES/0004_500px.jpg"],
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 05 (adicione foto)",
+        "codigo": "CAN147",
+        "preco": "27,00",
+        "imagens": ["canecas/MAES/0005.jpg"],
+        "imagensMobile": ["canecas/MAES/0005_500px.jpg"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      }
     ]
   },
   "Quebra Cabeça": {
