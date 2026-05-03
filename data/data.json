@@ -817,7 +817,7 @@
     "Dias das mães": [
       {
         "titulo": "Dia das Mães 01 (adicione foto)",
-        "codigo": "CAN143",
+        "codigo": "CAN152",
         "preco": "27,00",
         "imagens": ["canecas/MAES/0001.jpg"],
         "imagensMobile": ["canecas/MAES/0001_500px.jpg"],
@@ -825,7 +825,7 @@
       },
       {
         "titulo": "Dia das Mães 02 (adicione foto)",
-        "codigo": "CAN144",
+        "codigo": "CAN153",
         "preco": "27,00",
         "imagens": ["canecas/MAES/0002.jpg"],
         "imagensMobile": ["canecas/MAES/0002_500px.jpg"],
@@ -833,7 +833,7 @@
       },
       {
         "titulo": "Dia das Mães 03 (adicione foto)",
-        "codigo": "CAN145",
+        "codigo": "CAN154",
         "preco": "27,00",
         "imagens": ["canecas/MAES/0003.jpg"],
         "imagensMobile": ["canecas/MAES/0003_500px.jpg"],  
@@ -841,7 +841,7 @@
       },
       {
         "titulo": "Dia das Mães 04 (adicione foto)",
-        "codigo": "CAN146",
+        "codigo": "CAN155",
         "preco": "27,00",
         "imagens": ["canecas/MAES/0004.jpg"],
         "imagensMobile": ["canecas/MAES/0004_500px.jpg"],
@@ -849,10 +849,258 @@
       },
       {
         "titulo": "Dia das Mães 05 (adicione foto)",
-        "codigo": "CAN147",
+        "codigo": "CAN156",
         "preco": "27,00",
         "imagens": ["canecas/MAES/0005.jpg"],
         "imagensMobile": ["canecas/MAES/0005_500px.jpg"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 06",
+        "codigo": "CAN157",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_01.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_01_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 07",
+        "codigo": "CAN158",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_03.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_03_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 08",
+        "codigo": "CAN159",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_04.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_04_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 09",
+        "codigo": "CAN160",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_05.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_05_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 10",
+        "codigo": "CAN161",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_06.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_06_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 11",
+        "codigo": "CAN162",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_07.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_07_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 12",
+        "codigo": "CAN163",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_08.png", "canecas/MAES/pandoca_08_2.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_08_500px.png", "canecas/MAES/pandoca_08_2_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 13",
+        "codigo": "CAN164",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_09.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_09_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 14",
+        "codigo": "CAN165",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_10.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_10_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 15",
+        "codigo": "CAN166",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_11.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_11_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 16",
+        "codigo": "CAN167",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_12.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_12_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 17",
+        "codigo": "CAN168",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_13.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_13_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 18",
+        "codigo": "CAN169",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_14.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_14_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 19",
+        "codigo": "CAN170",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_15.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_15_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 20",
+        "codigo": "CAN171",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_16.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_16_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 21",
+        "codigo": "CAN172",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_17.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_17_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 22",
+        "codigo": "CAN173",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_18.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_18_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 23",
+        "codigo": "CAN174",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_19.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_19_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 24",
+        "codigo": "CAN175",
+        "preco": "25,00",
+        "imagens": ["canecas/MAES/pandoca_20.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_20_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 25",
+        "codigo": "CAN176",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_21.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_21_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 26",
+        "codigo": "CAN177",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_22.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_22_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 27",
+        "codigo": "CAN178",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_23.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_23_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 28",
+        "codigo": "CAN179",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_24.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_24_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 29",
+        "codigo": "CAN180",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_25.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_25_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 30",
+        "codigo": "CAN181",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_26.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_26_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 31",
+        "codigo": "CAN182",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_27.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_27_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 32",
+        "codigo": "CAN183",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_28.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_28_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 33",
+        "codigo": "CAN184",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_29.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_29_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 34",
+        "codigo": "CAN185",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_30.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_30_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 35",
+        "codigo": "CAN186",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_31.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_31_500px.png"],  
+        "isNoveltyValidUntil": "2026-05-31"
+      },
+      {
+        "titulo": "Dia das Mães 36",
+        "codigo": "CAN187",
+        "preco": "25,00", 
+        "imagens": ["canecas/MAES/pandoca_32.png"],
+        "imagensMobile": ["canecas/MAES/pandoca_32_500px.png"],  
         "isNoveltyValidUntil": "2026-05-31"
       }
     ]

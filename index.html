@@ -540,10 +540,13 @@
         subcategoryContainer.innerHTML += `
         <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 rounded-full active" data-subcategory="todos">Todos</button>
       `;
+        subcategories.sort();
         subcategories.forEach((subcat) => {
           const display = subcat.charAt(0).toUpperCase() + subcat.slice(1);
+          let isMother = false;
+          if (subcat.toUpperCase() === "DIAS DAS MÃES") isMother = true;
           subcategoryContainer.innerHTML += `
-          <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 my-1 rounded-full" data-subcategory="${subcat}">${display}</button>
+          <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 my-1 rounded-full" data-subcategory="${subcat}">${display}${isMother ? "💝" : ""}</button>
         `;
         });
         const buttons =
