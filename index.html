@@ -494,10 +494,13 @@
         mainMenu.innerHTML = "";
         Object.keys(catalogoData).forEach((category) => {
           const display = category.charAt(0).toUpperCase() + category.slice(1);
+          let totalItems = 0;
+          Object.values(catalogoData[category]).forEach(sub => totalItems += sub.length);
+
           const btn = document.createElement("button");
           btn.className =
-            "menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 shadow-md transition-all hover:bg-gray-800";
-          btn.textContent = display;
+            "menu-btn bg-gray-600 text-white rounded-full px-4 md:px-6 py-2 shadow-md transition-all hover:bg-gray-800 inline-flex items-center gap-2";
+          btn.innerHTML = `${display} <span class="bg-gray-200 text-gray-800 text-xs font-bold px-2 py-0.5 rounded-full">${totalItems}</span>`;
           btn.setAttribute("data-category", category);
           btn.onclick = () => {
             currentPage = 1;
@@ -537,16 +540,20 @@
         subcategoryContainer.innerHTML = "";
         if (!catalogoData[category]) return;
         const subcategories = Object.keys(catalogoData[category]);
+        let totalCategoryItems = 0;
+        subcategories.forEach(subcat => totalCategoryItems += catalogoData[category][subcat].length);
+
         subcategoryContainer.innerHTML += `
-        <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 rounded-full active" data-subcategory="todos">Todos</button>
+        <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 rounded-full active inline-flex items-center gap-2" data-subcategory="todos">Todos <span class="bg-gray-200 text-gray-800 text-xs font-bold px-2 py-0.5 rounded-full">${totalCategoryItems}</span></button>
       `;
         subcategories.sort();
         subcategories.forEach((subcat) => {
           const display = subcat.charAt(0).toUpperCase() + subcat.slice(1);
           let isMother = false;
           if (subcat.toUpperCase() === "DIAS DAS MÃES") isMother = true;
+          const subcatItems = catalogoData[category][subcat].length;
           subcategoryContainer.innerHTML += `
-          <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 my-1 rounded-full" data-subcategory="${subcat}">${display}${isMother ? "💝" : ""}</button>
+          <button class="subcategory-btn bg-gray-400 text-white px-3 py-1 my-1 rounded-full inline-flex items-center gap-2" data-subcategory="${subcat}">${display}${isMother ? "💝" : ""} <span class="bg-gray-200 text-gray-800 text-xs font-bold px-2 py-0.5 rounded-full">${subcatItems}</span></button>
         `;
         });
         const buttons =
