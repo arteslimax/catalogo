@@ -291,6 +291,34 @@
         height: 25px;
         fill: white;
       }
+      /* Packaging selection styling */
+      .packaging-option {
+        transition: all 0.3s ease;
+      }
+      .packaging-option:hover {
+        transform: scale(1.05);
+        border-color: #4b4b4b;
+      }
+      .packaging-option.selected {
+        border-color: #1a0272;
+        border-width: 4px;
+        transform: scale(1.08);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Zoom modal style */
+      #zoom-modal {
+        display: none;
+        position: fixed;
+        z-index: 1050;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        justify-content: center;
+        align-items: center;
+      }
     </style>
   </head>
   <body class="p-4 md:p-8">
@@ -457,10 +485,36 @@
     </div>
     ${buttonsHtml}
   </div>
-  <h2 class="text-xl sm:text-2xl font-semibold mt-4 text-center">${item.titulo}</h2>
-  <p class="text-3xl font-bold text-green-600 text-center mt-2">R$ ${item.preco}</p>
+  <h2 class="text-xl sm:text-2xl font-semibold mt-1 text-center">${item.titulo}</h2>
+  <p class="text-2xl font-bold text-green-600 text-center mt-1">R$ ${item.preco}</p>
   <p class="text-sm text-gray-500 text-center mt-1">Código: ${item.codigo}</p>
-  <button onclick="encomendar('${item.titulo}', '${item.preco}', '${item.codigo}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-full mt-6 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+  
+  <!-- Seção Escolha sua Embalagem -->
+  <div class="mt-2 text-left border-t pt-2">
+    <p class="font-semibold text-gray-700 text-center text-sm md:text-base mb-1">Escolha sua embalagem:</p>
+    <div class="flex gap-6 justify-center items-center">
+      <!-- Opção 1 -->
+      <div id="pkg-option-1" class="relative w-20 h-20 border-2 border-gray-300 rounded-lg cursor-pointer overflow-hidden packaging-option" onclick="selectPackaging(this, 'Embalagem 01')">
+        <img src="embalagens/01.jpg" class="w-full h-full object-cover" alt="Embalagem 01">
+        <button class="absolute top-0 right-0 p-1 bg-black bg-opacity-65 text-white rounded-bl-lg hover:bg-opacity-80 transition" onclick="event.stopPropagation(); expandPackaging('embalagens/01.jpg')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"/>
+          </svg>
+        </button>
+      </div>
+      <!-- Opção 2 -->
+      <div id="pkg-option-2" class="relative w-20 h-20 border-2 border-gray-300 rounded-lg cursor-pointer overflow-hidden packaging-option" onclick="selectPackaging(this, 'Embalagem 02')">
+        <img src="embalagens/02.jpg" class="w-full h-full object-cover" alt="Embalagem 02">
+        <button class="absolute top-0 right-0 p-1 bg-black bg-opacity-65 text-white rounded-bl-lg hover:bg-opacity-80 transition" onclick="event.stopPropagation(); expandPackaging('embalagens/02.jpg')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <button id="modal-encomendar-btn" disabled onclick="encomendarComPackaging()" class="encomendar-btn w-full bg-gray-400 text-white font-bold py-2 px-4 rounded-full mt-2 shadow-lg transition-all opacity-50 cursor-not-allowed">Encomendar</button>
   `;
       }
 
@@ -633,9 +687,9 @@
                 item.preco
               }</p>
             </div>
-            <button onclick="encomendar('${item.titulo}', '${item.preco}', '${
-              item.codigo
-            }')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-1 px-2 rounded-full mt-2 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
+            <button onclick="openModal(${
+              index + start
+            }, '${category}', '${subcategory}')" class="encomendar-btn w-full bg-blue-500 text-white font-bold py-1 px-2 rounded-full mt-2 shadow-lg transition-all hover:bg-blue-600">Encomendar</button>
           </div>
         `;
           allCardsHtml += cardHtml;
@@ -702,11 +756,17 @@
         container.appendChild(nextBtn);
       }
 
+      let selectedPackaging = null;
+      let currentModalItem = null;
+
       window.openModal = function (itemIndex, category, subcategory = "todos") {
         const products = getSortedProducts(category, subcategory);
         const item = products[itemIndex];
 
         if (!item) return;
+
+        selectedPackaging = null;
+        currentModalItem = item;
 
         modalContentContainer.innerHTML = createModalCarouselHTML(item);
         modal.style.display = "flex";
@@ -776,12 +836,59 @@
         }
       };
 
-      window.encomendar = function (titulo, preco, codigo) {
-        const message = `Olá! Gostaria de encomendar o item: ${titulo} (Código: ${codigo}, R$ ${preco}). Por favor, me passe mais detalhes sobre a personalização.`;
+      window.encomendar = function (titulo, preco, codigo, embalagem) {
+        let message = `Olá! Gostaria de encomendar o item: ${titulo} (Código: ${codigo}, R$ ${preco})`;
+        if (embalagem) {
+          message += ` com a embalagem: ${embalagem}`;
+        }
+        message += `. Por favor, me passe mais detalhes sobre a personalização.`;
+
         const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
           message,
         )}`;
         window.open(whatsappLink, "_blank");
+      };
+
+      window.selectPackaging = function (element, packagingName) {
+        // Remove 'selected' class from all packaging options
+        document.querySelectorAll(".packaging-option").forEach((opt) => {
+          opt.classList.remove("selected");
+        });
+
+        // Add 'selected' class to the clicked element
+        element.classList.add("selected");
+
+        // Save selected packaging
+        selectedPackaging = packagingName;
+
+        // Enable the Order button in the modal
+        const btn = document.getElementById("modal-encomendar-btn");
+        if (btn) {
+          btn.removeAttribute("disabled");
+          btn.classList.remove("bg-gray-400", "opacity-50", "cursor-not-allowed");
+          btn.classList.add("bg-blue-500", "hover:bg-blue-600", "cursor-pointer", "opacity-100");
+        }
+      };
+
+      window.expandPackaging = function (src) {
+        const zoomModal = document.getElementById("zoom-modal");
+        const zoomImg = document.getElementById("zoom-img");
+        if (zoomModal && zoomImg) {
+          zoomImg.src = src;
+          zoomModal.style.display = "flex";
+        }
+      };
+
+      window.closeZoomModal = function () {
+        const zoomModal = document.getElementById("zoom-modal");
+        if (zoomModal) {
+          zoomModal.style.display = "none";
+        }
+      };
+
+      window.encomendarComPackaging = function () {
+        if (!currentModalItem || !selectedPackaging) return;
+        encomendar(currentModalItem.titulo, currentModalItem.preco, currentModalItem.codigo, selectedPackaging);
       };
 
       function handleSwipeAndDrag(carouselId) {
@@ -854,6 +961,14 @@
 
       document.addEventListener("DOMContentLoaded", carregarCatalogo);
     </script>
+    <!-- Modal de Zoom para Imagem da Embalagem -->
+    <div id="zoom-modal" class="modal" onclick="closeZoomModal()">
+      <div class="relative bg-white p-2 rounded-xl max-w-sm max-h-[80vh] flex flex-col justify-center items-center shadow-2xl" onclick="event.stopPropagation()">
+        <span class="absolute top-2 right-2 text-2xl font-bold cursor-pointer text-gray-700 bg-white bg-opacity-70 hover:bg-opacity-90 rounded-full w-8 h-8 flex items-center justify-center shadow" onclick="closeZoomModal()">&times;</span>
+        <img id="zoom-img" src="" class="max-w-full max-h-[70vh] rounded-lg object-contain">
+      </div>
+    </div>
+
     <a
       href="https://wa.me/5575999593288?text=Ol%C3%A1!%20Gostaria%20de%20entrar%20em%20contato."
       class="whatsapp-float"
