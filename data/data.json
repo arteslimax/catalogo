@@ -4,14 +4,14 @@
       {
         "titulo": "Flork Torcedor 01",
         "codigo": "CAN001",
-        "preco": "26,00",
+        "preco": "24,00",
         "imagens": ["canecas/flork-brasil/FLORK01.jpg"],
         "imagensMobile": ["canecas/flork-brasil/FLORK01_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 02",
         "codigo": "CAN002",
-        "preco": "26,00",
+        "preco": "24,00",
         "imagens": [
           "canecas/flork-brasil/FLORK02.jpg",
           "canecas/flork-brasil/FLORK07.mp4"
@@ -21,28 +21,28 @@
       {
         "titulo": "Flork Torcedor 03",
         "codigo": "CAN003",
-        "preco": "26,00",
+        "preco": "24,00",
         "imagens": ["canecas/flork-brasil/FLORK03.jpg"],
         "imagensMobile": ["canecas/flork-brasil/FLORK03_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 04",
         "codigo": "CAN004",
-        "preco": "26,00",
+        "preco": "24,00",
         "imagens": ["canecas/flork-brasil/FLORK04.jpg"],
         "imagensMobile": ["canecas/flork-brasil/FLORK04_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 05",
         "codigo": "CAN005",
-        "preco": "26,00",
+        "preco": "24,00",
         "imagens": ["canecas/flork-brasil/FLORK05.jpg"],
         "imagensMobile": ["canecas/flork-brasil/FLORK05_500px.jpg"]
       },
       {
         "titulo": "Flork Torcedor 06",
         "codigo": "CAN006",
-        "preco": "26,00",
+        "preco": "24,00",
         "imagens": ["canecas/flork-brasil/FLORK06.jpg"],
         "imagensMobile": ["canecas/flork-brasil/FLORK06_500px.jpg"]
       }
